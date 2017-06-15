@@ -1,0 +1,943 @@
+2017-06-14 16:18:45 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: HuanbanSpider)
+2017-06-14 16:18:45 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'HuanbanSpider', 'LOG_FILE': 'scrapy.log', 'NEWSPIDER_MODULE': 'HuanbanSpider.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['HuanbanSpider.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.22 Safari/537.36 SE 2.X MetaSr 1.0'}
+2017-06-14 16:18:45 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-06-14 16:18:46 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-06-14 16:18:46 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-06-14 16:18:46 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy.pipelines.images.ImagesPipeline']
+2017-06-14 16:18:46 [scrapy.core.engine] INFO: Spider opened
+2017-06-14 16:18:47 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-06-14 16:18:47 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-06-14 16:18:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://huaban.com/robots.txt> (referer: None)
+2017-06-14 16:18:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://huaban.com/favorite/beauty/> (referer: None)
+2017-06-14 16:18:48 [scrapy.core.engine] DEBUG: Crawled (404) <GET http://img.hb.aicdn.com/robots.txt> (referer: None)
+2017-06-14 16:18:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/6ebbf51c150d92a16d6657361a1f3419e98ef19f97f0-FeTN6P> (referer: None)
+2017-06-14 16:18:48 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/6ebbf51c150d92a16d6657361a1f3419e98ef19f97f0-FeTN6P> referred in <None>
+2017-06-14 16:18:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/3d63621042c46e952f77f14748428df76a33344413405-IXrFOs> (referer: None)
+2017-06-14 16:18:48 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/3d63621042c46e952f77f14748428df76a33344413405-IXrFOs> referred in <None>
+2017-06-14 16:18:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/e789f87771e58cfedede9a3e5670ba199e897aa2115c3-O2szK1> (referer: None)
+2017-06-14 16:18:48 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/e789f87771e58cfedede9a3e5670ba199e897aa2115c3-O2szK1> referred in <None>
+2017-06-14 16:18:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/fe5aaedfdca7943598bbd634f5798698190b674c16877-ENNJbY> (referer: None)
+2017-06-14 16:18:48 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/fe5aaedfdca7943598bbd634f5798698190b674c16877-ENNJbY> referred in <None>
+2017-06-14 16:18:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/>
+{'image_urls': ['http://img.hb.aicdn.com/6ebbf51c150d92a16d6657361a1f3419e98ef19f97f0-FeTN6P'], 'images': [{'url': 'http://img.hb.aicdn.com/6ebbf51c150d92a16d6657361a1f3419e98ef19f97f0-FeTN6P', 'path': 'full/593dc76cefe3bfa6d398a8754e37c3b5d5301c42.jpg', 'checksum': 'baa973c7b877eb12ba9c4d2b82cc901b'}]}
+2017-06-14 16:18:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/>
+{'image_urls': ['http://img.hb.aicdn.com/3d63621042c46e952f77f14748428df76a33344413405-IXrFOs'], 'images': [{'url': 'http://img.hb.aicdn.com/3d63621042c46e952f77f14748428df76a33344413405-IXrFOs', 'path': 'full/c7490a1c8e36f347892c01a5225b6e2c93dbfb73.jpg', 'checksum': 'e9f446a3602ae38a59ca488fefe45b3c'}]}
+2017-06-14 16:18:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/b248254d8c197b98bf42a6ce8a56b802b4005e84362b6-SDXvSI> (referer: None)
+2017-06-14 16:18:48 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/b248254d8c197b98bf42a6ce8a56b802b4005e84362b6-SDXvSI> referred in <None>
+2017-06-14 16:18:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/0daf957315aab04242b6dc252a32cfbd4d2f2eb83d70d-juwaBi> (referer: None)
+2017-06-14 16:18:48 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/0daf957315aab04242b6dc252a32cfbd4d2f2eb83d70d-juwaBi> referred in <None>
+2017-06-14 16:18:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/>
+{'image_urls': ['http://img.hb.aicdn.com/e789f87771e58cfedede9a3e5670ba199e897aa2115c3-O2szK1'], 'images': [{'url': 'http://img.hb.aicdn.com/e789f87771e58cfedede9a3e5670ba199e897aa2115c3-O2szK1', 'path': 'full/50ba6c84444d8ac78545b0641c8cfffd28f3a03e.jpg', 'checksum': '5393f88c294799abe6bdb35289c68747'}]}
+2017-06-14 16:18:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/>
+{'image_urls': ['http://img.hb.aicdn.com/fe5aaedfdca7943598bbd634f5798698190b674c16877-ENNJbY'], 'images': [{'url': 'http://img.hb.aicdn.com/fe5aaedfdca7943598bbd634f5798698190b674c16877-ENNJbY', 'path': 'full/0b140cfd441db717aee29d0db0c05527267ea7e9.jpg', 'checksum': '77af394776f872aca0066bf9a3635a97'}]}
+2017-06-14 16:18:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/>
+{'image_urls': ['http://img.hb.aicdn.com/b248254d8c197b98bf42a6ce8a56b802b4005e84362b6-SDXvSI'], 'images': [{'url': 'http://img.hb.aicdn.com/b248254d8c197b98bf42a6ce8a56b802b4005e84362b6-SDXvSI', 'path': 'full/29f57a13f83e3b471d609e486b65fa50d192b33b.jpg', 'checksum': '6a48c7a077b2dd2167541b42f4a81c1e'}]}
+2017-06-14 16:18:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/>
+{'image_urls': ['http://img.hb.aicdn.com/0daf957315aab04242b6dc252a32cfbd4d2f2eb83d70d-juwaBi'], 'images': [{'url': 'http://img.hb.aicdn.com/0daf957315aab04242b6dc252a32cfbd4d2f2eb83d70d-juwaBi', 'path': 'full/ba902b0f44b2d663efe61999752df3018588fd6f.jpg', 'checksum': 'fe562033e83471a2ff6e04f4dfd690f2'}]}
+2017-06-14 16:18:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/2d2da8d8a5e1505fdb4e197e57d9f9cdaa1f0c02683e-k0NLN0> (referer: None)
+2017-06-14 16:18:51 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/2d2da8d8a5e1505fdb4e197e57d9f9cdaa1f0c02683e-k0NLN0> referred in <None>
+2017-06-14 16:18:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/24c05c6a3ed3e9e4c272f9875ee5aa1a55994d04e9d1-iCjNGv> (referer: None)
+2017-06-14 16:18:51 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/24c05c6a3ed3e9e4c272f9875ee5aa1a55994d04e9d1-iCjNGv> referred in <None>
+2017-06-14 16:18:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/>
+{'image_urls': ['http://img.hb.aicdn.com/2d2da8d8a5e1505fdb4e197e57d9f9cdaa1f0c02683e-k0NLN0'], 'images': [{'url': 'http://img.hb.aicdn.com/2d2da8d8a5e1505fdb4e197e57d9f9cdaa1f0c02683e-k0NLN0', 'path': 'full/850c9efb466a2bb4b5b7055fd8c331a4041ae141.jpg', 'checksum': 'b9dde111e092334fa2fca8e791b8fb9f'}]}
+2017-06-14 16:18:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/193ac4a4511ba2abd77be81bef60286b72e42ddb2dbfe-DFuwvK> (referer: None)
+2017-06-14 16:18:51 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/193ac4a4511ba2abd77be81bef60286b72e42ddb2dbfe-DFuwvK> referred in <None>
+2017-06-14 16:18:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/>
+{'image_urls': ['http://img.hb.aicdn.com/24c05c6a3ed3e9e4c272f9875ee5aa1a55994d04e9d1-iCjNGv'], 'images': [{'url': 'http://img.hb.aicdn.com/24c05c6a3ed3e9e4c272f9875ee5aa1a55994d04e9d1-iCjNGv', 'path': 'full/dc0b089d729ad357358591c1b6a72c18f396cd57.jpg', 'checksum': '83ade68bf1d03dbff5acb79414dbe427'}]}
+2017-06-14 16:18:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/>
+{'image_urls': ['http://img.hb.aicdn.com/193ac4a4511ba2abd77be81bef60286b72e42ddb2dbfe-DFuwvK'], 'images': [{'url': 'http://img.hb.aicdn.com/193ac4a4511ba2abd77be81bef60286b72e42ddb2dbfe-DFuwvK', 'path': 'full/ed6c868994ea279ab7b53940aa3cf69e54da4e33.jpg', 'checksum': 'e519aab4cdc39d289c493d665e9c77d2'}]}
+2017-06-14 16:18:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/02a8e9ff15483113d5d678e9b26f902155ccbb657945c-2f96bJ> (referer: None)
+2017-06-14 16:18:53 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/02a8e9ff15483113d5d678e9b26f902155ccbb657945c-2f96bJ> referred in <None>
+2017-06-14 16:18:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/>
+{'image_urls': ['http://img.hb.aicdn.com/02a8e9ff15483113d5d678e9b26f902155ccbb657945c-2f96bJ'], 'images': [{'url': 'http://img.hb.aicdn.com/02a8e9ff15483113d5d678e9b26f902155ccbb657945c-2f96bJ', 'path': 'full/8ee29c47f6c6bad9c878e533c9ce6746a7db4c04.jpg', 'checksum': 'c8e1a6bca1659749a1e17ac724a661fe'}]}
+2017-06-14 16:18:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/ea85003cdce116e0cfef38d76891574ca588c86f1c11d-Ko5P2A> (referer: None)
+2017-06-14 16:18:54 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/ea85003cdce116e0cfef38d76891574ca588c86f1c11d-Ko5P2A> referred in <None>
+2017-06-14 16:18:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/5d017cbd10e9947bdd639b9000d1a21a0138001030a52-Ykx8HE> (referer: None)
+2017-06-14 16:18:54 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/5d017cbd10e9947bdd639b9000d1a21a0138001030a52-Ykx8HE> referred in <None>
+2017-06-14 16:18:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/>
+{'image_urls': ['http://img.hb.aicdn.com/ea85003cdce116e0cfef38d76891574ca588c86f1c11d-Ko5P2A'], 'images': [{'url': 'http://img.hb.aicdn.com/ea85003cdce116e0cfef38d76891574ca588c86f1c11d-Ko5P2A', 'path': 'full/0da5f983bc548b44ed72953dabfab8975950f410.jpg', 'checksum': 'ace454a0b37fde9d4271f25f0ae6b417'}]}
+2017-06-14 16:18:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/>
+{'image_urls': ['http://img.hb.aicdn.com/5d017cbd10e9947bdd639b9000d1a21a0138001030a52-Ykx8HE'], 'images': [{'url': 'http://img.hb.aicdn.com/5d017cbd10e9947bdd639b9000d1a21a0138001030a52-Ykx8HE', 'path': 'full/4c64b35e647bab04050de146c2782a6e34ee3a02.jpg', 'checksum': 'd1d1130a4b11f2cdff9ea385d6a5761f'}]}
+2017-06-14 16:18:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/ffcaddfd6b54f45ea3a161597ea495b64e7d058f33e2e-05evs6> (referer: None)
+2017-06-14 16:18:55 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/ffcaddfd6b54f45ea3a161597ea495b64e7d058f33e2e-05evs6> referred in <None>
+2017-06-14 16:18:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/>
+{'image_urls': ['http://img.hb.aicdn.com/ffcaddfd6b54f45ea3a161597ea495b64e7d058f33e2e-05evs6'], 'images': [{'url': 'http://img.hb.aicdn.com/ffcaddfd6b54f45ea3a161597ea495b64e7d058f33e2e-05evs6', 'path': 'full/561eb36c42778b279b5ee8f41284716f70b6fd96.jpg', 'checksum': '6ac34a225a4768e4e1835c6eb795944f'}]}
+2017-06-14 16:18:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/48cad28b2aa260f2677c4065f56b93b782e603378a28-s7PRE9> (referer: None)
+2017-06-14 16:18:58 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/48cad28b2aa260f2677c4065f56b93b782e603378a28-s7PRE9> referred in <None>
+2017-06-14 16:18:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/>
+{'image_urls': ['http://img.hb.aicdn.com/48cad28b2aa260f2677c4065f56b93b782e603378a28-s7PRE9'], 'images': [{'url': 'http://img.hb.aicdn.com/48cad28b2aa260f2677c4065f56b93b782e603378a28-s7PRE9', 'path': 'full/592a7bc0b6b764eb69564bf805df9565fc315231.jpg', 'checksum': '851d0f71b70e282905f3158355a2acd2'}]}
+2017-06-14 16:18:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/14abf799a6de4de7e16922a9751427afb59b6b4def10-qIuqvb> (referer: None)
+2017-06-14 16:18:59 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/14abf799a6de4de7e16922a9751427afb59b6b4def10-qIuqvb> referred in <None>
+2017-06-14 16:18:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/>
+{'image_urls': ['http://img.hb.aicdn.com/14abf799a6de4de7e16922a9751427afb59b6b4def10-qIuqvb'], 'images': [{'url': 'http://img.hb.aicdn.com/14abf799a6de4de7e16922a9751427afb59b6b4def10-qIuqvb', 'path': 'full/75924cb06c82c3ac24b40f0b8be820d5e4e37c11.jpg', 'checksum': '8abbee21e5b1d2e392f82c8d009583d7'}]}
+2017-06-14 16:18:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/d08ce0f24aa89932a3369f86a9fc9d4b25e5e846113a04-CtrY5Q> (referer: None)
+2017-06-14 16:18:59 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/d08ce0f24aa89932a3369f86a9fc9d4b25e5e846113a04-CtrY5Q> referred in <None>
+2017-06-14 16:19:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/>
+{'image_urls': ['http://img.hb.aicdn.com/d08ce0f24aa89932a3369f86a9fc9d4b25e5e846113a04-CtrY5Q'], 'images': [{'url': 'http://img.hb.aicdn.com/d08ce0f24aa89932a3369f86a9fc9d4b25e5e846113a04-CtrY5Q', 'path': 'full/8661cf1228be8ed0d5a087ee157a11e0ee8523a1.jpg', 'checksum': '1f205e1ebef37fded834cf2552d10e62'}]}
+2017-06-14 16:19:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/b945b3fe88dff30c2d87a5ee312583496be9f8b737fe0-whEl4r> (referer: None)
+2017-06-14 16:19:01 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/b945b3fe88dff30c2d87a5ee312583496be9f8b737fe0-whEl4r> referred in <None>
+2017-06-14 16:19:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/1947f14e7c8dbad76c389b6502550e6a3e936bbe4f99-r4YlXN> (referer: None)
+2017-06-14 16:19:01 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/1947f14e7c8dbad76c389b6502550e6a3e936bbe4f99-r4YlXN> referred in <None>
+2017-06-14 16:19:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/9383691036a5d5e5ab5af3b67c0c84a9a6684d9b300f7-SZUgdS> (referer: None)
+2017-06-14 16:19:01 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/9383691036a5d5e5ab5af3b67c0c84a9a6684d9b300f7-SZUgdS> referred in <None>
+2017-06-14 16:19:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/>
+{'image_urls': ['http://img.hb.aicdn.com/b945b3fe88dff30c2d87a5ee312583496be9f8b737fe0-whEl4r'], 'images': [{'url': 'http://img.hb.aicdn.com/b945b3fe88dff30c2d87a5ee312583496be9f8b737fe0-whEl4r', 'path': 'full/95bf0873358c45f6b6a4775b37ff0e83b75b7eae.jpg', 'checksum': 'fd87caa28ba18bcb65bbf1ff1551b9de'}]}
+2017-06-14 16:19:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/>
+{'image_urls': ['http://img.hb.aicdn.com/1947f14e7c8dbad76c389b6502550e6a3e936bbe4f99-r4YlXN'], 'images': [{'url': 'http://img.hb.aicdn.com/1947f14e7c8dbad76c389b6502550e6a3e936bbe4f99-r4YlXN', 'path': 'full/98ca7a1b39c59162210e64802d99ff16b97e1bd0.jpg', 'checksum': '8285b0aee2ffbfbbb5227511411f3c79'}]}
+2017-06-14 16:19:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/>
+{'image_urls': ['http://img.hb.aicdn.com/9383691036a5d5e5ab5af3b67c0c84a9a6684d9b300f7-SZUgdS'], 'images': [{'url': 'http://img.hb.aicdn.com/9383691036a5d5e5ab5af3b67c0c84a9a6684d9b300f7-SZUgdS', 'path': 'full/9131edbe69dd6a3861011906a202774c7200f3cc.jpg', 'checksum': '8db75aa1a35d5268d5d2c677f41309ca'}]}
+2017-06-14 16:19:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://huaban.com/favorite/beauty/?j3vgljf1&max=1186939080&limit=20&wfl=1> (referer: http://huaban.com/favorite/beauty/)
+2017-06-14 16:19:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/afc4625233f7a35e05dd120260cf6fc89c169c3b77c3-C8AUQg> (referer: None)
+2017-06-14 16:19:03 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/afc4625233f7a35e05dd120260cf6fc89c169c3b77c3-C8AUQg> referred in <None>
+2017-06-14 16:19:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/5f635641cdc3726fa53e2fcf67720cbc8506f3205d81-HmvBMV> (referer: None)
+2017-06-14 16:19:03 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/5f635641cdc3726fa53e2fcf67720cbc8506f3205d81-HmvBMV> referred in <None>
+2017-06-14 16:19:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1186939080&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/afc4625233f7a35e05dd120260cf6fc89c169c3b77c3-C8AUQg'], 'images': [{'url': 'http://img.hb.aicdn.com/afc4625233f7a35e05dd120260cf6fc89c169c3b77c3-C8AUQg', 'path': 'full/08ce25c823c1dbc1465ad35005fb67e0b2d3be19.jpg', 'checksum': '7aea600d9d404593fe3ff303b2dbb2f8'}]}
+2017-06-14 16:19:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1186939080&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/5f635641cdc3726fa53e2fcf67720cbc8506f3205d81-HmvBMV'], 'images': [{'url': 'http://img.hb.aicdn.com/5f635641cdc3726fa53e2fcf67720cbc8506f3205d81-HmvBMV', 'path': 'full/613b476e3452720aeeeec0745eee8d1a9e958d0d.jpg', 'checksum': '30acf968cc6cba75a84993b68cd15145'}]}
+2017-06-14 16:19:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/e2beb9c3945be2966cecfb64cab594b5dea3532839673-fHm3Ki> (referer: None)
+2017-06-14 16:19:05 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/e2beb9c3945be2966cecfb64cab594b5dea3532839673-fHm3Ki> referred in <None>
+2017-06-14 16:19:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1186939080&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/e2beb9c3945be2966cecfb64cab594b5dea3532839673-fHm3Ki'], 'images': [{'url': 'http://img.hb.aicdn.com/e2beb9c3945be2966cecfb64cab594b5dea3532839673-fHm3Ki', 'path': 'full/87862e6ccca711a0f6c11d5a1caea747a03ef8a6.jpg', 'checksum': '0e9a286b5b57e1492cbab2489a9c2b55'}]}
+2017-06-14 16:19:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/d8d18e995c38a56c5ab439378274603c62c1cdb7350ae-YNXCZP> (referer: None)
+2017-06-14 16:19:05 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/d8d18e995c38a56c5ab439378274603c62c1cdb7350ae-YNXCZP> referred in <None>
+2017-06-14 16:19:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1186939080&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/d8d18e995c38a56c5ab439378274603c62c1cdb7350ae-YNXCZP'], 'images': [{'url': 'http://img.hb.aicdn.com/d8d18e995c38a56c5ab439378274603c62c1cdb7350ae-YNXCZP', 'path': 'full/70170aebdc1dc898c916bbe4997384cf86bfcf4f.jpg', 'checksum': 'd1919e4e0a0309365b21d7e7f1c0ead9'}]}
+2017-06-14 16:19:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/c3df2fcfdd8ac582fbf0374c63486dcbbb78b9be46b69-taXIzy> (referer: None)
+2017-06-14 16:19:07 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/c3df2fcfdd8ac582fbf0374c63486dcbbb78b9be46b69-taXIzy> referred in <None>
+2017-06-14 16:19:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1186939080&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/c3df2fcfdd8ac582fbf0374c63486dcbbb78b9be46b69-taXIzy'], 'images': [{'url': 'http://img.hb.aicdn.com/c3df2fcfdd8ac582fbf0374c63486dcbbb78b9be46b69-taXIzy', 'path': 'full/a7ac11cce786de9e87c421cfc6ffe5c17642a762.jpg', 'checksum': '36a81dbe1d21d4d0950539c7cb0b0991'}]}
+2017-06-14 16:19:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/bb3ba47aaa927f82fbffd5a7cd7ffbaab9e3f2373c2b2-zJjA1C> (referer: None)
+2017-06-14 16:19:08 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/bb3ba47aaa927f82fbffd5a7cd7ffbaab9e3f2373c2b2-zJjA1C> referred in <None>
+2017-06-14 16:19:08 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1186939080&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/bb3ba47aaa927f82fbffd5a7cd7ffbaab9e3f2373c2b2-zJjA1C'], 'images': [{'url': 'http://img.hb.aicdn.com/bb3ba47aaa927f82fbffd5a7cd7ffbaab9e3f2373c2b2-zJjA1C', 'path': 'full/7f1c86e0c57681eb701a6de9a1ff95f5bc8f5e60.jpg', 'checksum': 'cff8dc6ff07511011c63c5241df78c71'}]}
+2017-06-14 16:19:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/3ec9bf8196cc639d3405e90bcbe0ed8e01c72dd94f487-c9pi77> (referer: None)
+2017-06-14 16:19:12 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/3ec9bf8196cc639d3405e90bcbe0ed8e01c72dd94f487-c9pi77> referred in <None>
+2017-06-14 16:19:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1186939080&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/3ec9bf8196cc639d3405e90bcbe0ed8e01c72dd94f487-c9pi77'], 'images': [{'url': 'http://img.hb.aicdn.com/3ec9bf8196cc639d3405e90bcbe0ed8e01c72dd94f487-c9pi77', 'path': 'full/b165c73154414005140337d91fb03d64463a8e93.jpg', 'checksum': '93c13caf2b1eca06a45b7007be950128'}]}
+2017-06-14 16:19:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/882c519c18abcd73aa97faee516237e424b301b969d87-iQ62Jq> (referer: None)
+2017-06-14 16:19:15 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/882c519c18abcd73aa97faee516237e424b301b969d87-iQ62Jq> referred in <None>
+2017-06-14 16:19:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/52dd77809d749eaa4a440dd3b63c625b98bbee3958b5e-eYaCRT> (referer: None)
+2017-06-14 16:19:15 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/52dd77809d749eaa4a440dd3b63c625b98bbee3958b5e-eYaCRT> referred in <None>
+2017-06-14 16:19:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/c12eabac4ab0ede071df080e2a6fcd8b18e0fea7907d-xUWcn8> (referer: None)
+2017-06-14 16:19:15 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/c12eabac4ab0ede071df080e2a6fcd8b18e0fea7907d-xUWcn8> referred in <None>
+2017-06-14 16:19:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1186939080&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/882c519c18abcd73aa97faee516237e424b301b969d87-iQ62Jq'], 'images': [{'url': 'http://img.hb.aicdn.com/882c519c18abcd73aa97faee516237e424b301b969d87-iQ62Jq', 'path': 'full/80ce3ef1f21eb5e362be8821efb701d7becba00d.jpg', 'checksum': '9e8bc55ad71eee37a644c7ba59f05e8c'}]}
+2017-06-14 16:19:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1186939080&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/52dd77809d749eaa4a440dd3b63c625b98bbee3958b5e-eYaCRT'], 'images': [{'url': 'http://img.hb.aicdn.com/52dd77809d749eaa4a440dd3b63c625b98bbee3958b5e-eYaCRT', 'path': 'full/424c4a989a228929e401793eebef7c691ae8634b.jpg', 'checksum': '602e96f2bc7baf4e4522b9a3c9388f8c'}]}
+2017-06-14 16:19:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1186939080&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/c12eabac4ab0ede071df080e2a6fcd8b18e0fea7907d-xUWcn8'], 'images': [{'url': 'http://img.hb.aicdn.com/c12eabac4ab0ede071df080e2a6fcd8b18e0fea7907d-xUWcn8', 'path': 'full/f02fc66207289e5fa2ac8fea291f4676f7abc55b.jpg', 'checksum': '3f5fdf3edd7fb2ef9c157757a80c5f21'}]}
+2017-06-14 16:19:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/a024b0f6cd587d9414fd4decfd29a65b4372f6b8369a5-Lq0s2g> (referer: None)
+2017-06-14 16:19:15 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/a024b0f6cd587d9414fd4decfd29a65b4372f6b8369a5-Lq0s2g> referred in <None>
+2017-06-14 16:19:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1186939080&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/a024b0f6cd587d9414fd4decfd29a65b4372f6b8369a5-Lq0s2g'], 'images': [{'url': 'http://img.hb.aicdn.com/a024b0f6cd587d9414fd4decfd29a65b4372f6b8369a5-Lq0s2g', 'path': 'full/9191357c0915d5fad49ee6c29665da976e9a11a2.jpg', 'checksum': '42582e12037707e00eee5255a5bf08fa'}]}
+2017-06-14 16:19:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/4267a3a028bf78b2ae55aedb60ef190fb9527c342826-7xONOt> (referer: None)
+2017-06-14 16:19:16 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/4267a3a028bf78b2ae55aedb60ef190fb9527c342826-7xONOt> referred in <None>
+2017-06-14 16:19:17 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1186939080&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/4267a3a028bf78b2ae55aedb60ef190fb9527c342826-7xONOt'], 'images': [{'url': 'http://img.hb.aicdn.com/4267a3a028bf78b2ae55aedb60ef190fb9527c342826-7xONOt', 'path': 'full/146471df207e80a6769ccbbf2382b5f3c7f14687.jpg', 'checksum': 'd8eb7610ce8374e468eb2ae3c79492b3'}]}
+2017-06-14 16:19:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/574390da9df59f1af46a7fa5434d6c85519eeb87490de-NqdhB1> (referer: None)
+2017-06-14 16:19:17 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/574390da9df59f1af46a7fa5434d6c85519eeb87490de-NqdhB1> referred in <None>
+2017-06-14 16:19:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1186939080&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/574390da9df59f1af46a7fa5434d6c85519eeb87490de-NqdhB1'], 'images': [{'url': 'http://img.hb.aicdn.com/574390da9df59f1af46a7fa5434d6c85519eeb87490de-NqdhB1', 'path': 'full/47a8a6ff7a0f6ccbcb3055074cd4f39b915f6dcf.jpg', 'checksum': '8ef16d47772c4818ae153da0554ae59a'}]}
+2017-06-14 16:19:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/d1614c58c0711366c8bf7800c7fd277c3924c7743cbff-bWnNnE> (referer: None)
+2017-06-14 16:19:19 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/d1614c58c0711366c8bf7800c7fd277c3924c7743cbff-bWnNnE> referred in <None>
+2017-06-14 16:19:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1186939080&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/d1614c58c0711366c8bf7800c7fd277c3924c7743cbff-bWnNnE'], 'images': [{'url': 'http://img.hb.aicdn.com/d1614c58c0711366c8bf7800c7fd277c3924c7743cbff-bWnNnE', 'path': 'full/b5c6d2c32934feea7a35e090202c2a10499c7dce.jpg', 'checksum': '3dffebde136d0d010c93af07f0fd9f6c'}]}
+2017-06-14 16:19:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/d83156eebdf3176c93c20b49051c166796bd3b773689d-1TyN7U> (referer: None)
+2017-06-14 16:19:21 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/d83156eebdf3176c93c20b49051c166796bd3b773689d-1TyN7U> referred in <None>
+2017-06-14 16:19:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1186939080&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/d83156eebdf3176c93c20b49051c166796bd3b773689d-1TyN7U'], 'images': [{'url': 'http://img.hb.aicdn.com/d83156eebdf3176c93c20b49051c166796bd3b773689d-1TyN7U', 'path': 'full/a41f96043339568437168f62f0ac693e81d64b16.jpg', 'checksum': '6506336dc2348eb1e8ef62c5b21e107f'}]}
+2017-06-14 16:19:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/5e6338045ca6ff0c4798e192308b72435b02eb2e6d773-a1sIr6> (referer: None)
+2017-06-14 16:19:21 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/5e6338045ca6ff0c4798e192308b72435b02eb2e6d773-a1sIr6> referred in <None>
+2017-06-14 16:19:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1186939080&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/5e6338045ca6ff0c4798e192308b72435b02eb2e6d773-a1sIr6'], 'images': [{'url': 'http://img.hb.aicdn.com/5e6338045ca6ff0c4798e192308b72435b02eb2e6d773-a1sIr6', 'path': 'full/2da124fd8f86adc62f32d887bcce9b0c7d9b0d2f.jpg', 'checksum': 'f6d5c144c0f7cfa089269625e2baefce'}]}
+2017-06-14 16:19:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/0a072a01384120b9a25ce7c95dfb4150062f25161038b8-O4wv2J> (referer: None)
+2017-06-14 16:19:25 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/0a072a01384120b9a25ce7c95dfb4150062f25161038b8-O4wv2J> referred in <None>
+2017-06-14 16:19:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1186939080&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/0a072a01384120b9a25ce7c95dfb4150062f25161038b8-O4wv2J'], 'images': [{'url': 'http://img.hb.aicdn.com/0a072a01384120b9a25ce7c95dfb4150062f25161038b8-O4wv2J', 'path': 'full/00e9b30962f9dd51ba44bfe84aabf34b005b038b.jpg', 'checksum': '492603abc16ae046bccad3e7ec1be9a7'}]}
+2017-06-14 16:19:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/e289e8af05a89f1e49c8178546e24ad6d581446d39dc6-eXaeRU> (referer: None)
+2017-06-14 16:19:30 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/e289e8af05a89f1e49c8178546e24ad6d581446d39dc6-eXaeRU> referred in <None>
+2017-06-14 16:19:30 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1186939080&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/e289e8af05a89f1e49c8178546e24ad6d581446d39dc6-eXaeRU'], 'images': [{'url': 'http://img.hb.aicdn.com/e289e8af05a89f1e49c8178546e24ad6d581446d39dc6-eXaeRU', 'path': 'full/ac75fa4592734a74041d4bfa930f1b616c5682a9.jpg', 'checksum': '88f45fd6a3836fadf87300d4791cbe14'}]}
+2017-06-14 16:19:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/696584fd4e315da413f85548f780cbf4234f8e812f2d4-dXZT2S> (referer: None)
+2017-06-14 16:19:31 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/696584fd4e315da413f85548f780cbf4234f8e812f2d4-dXZT2S> referred in <None>
+2017-06-14 16:19:31 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1186939080&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/696584fd4e315da413f85548f780cbf4234f8e812f2d4-dXZT2S'], 'images': [{'url': 'http://img.hb.aicdn.com/696584fd4e315da413f85548f780cbf4234f8e812f2d4-dXZT2S', 'path': 'full/43db5b4d6358f37b542d93a94009b9b969e9eba5.jpg', 'checksum': '3996bb2654b348cd1eade3dde4d5bdc1'}]}
+2017-06-14 16:19:47 [scrapy.extensions.logstats] INFO: Crawled 42 pages (at 42 pages/min), scraped 38 items (at 38 items/min)
+2017-06-14 16:19:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://huaban.com/favorite/beauty/?j3vgljf1&max=1185801225&limit=20&wfl=1> (referer: http://huaban.com/favorite/beauty/?j3vgljf1&max=1186939080&limit=20&wfl=1)
+2017-06-14 16:19:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/8861eab10e60e1323b96f53faf4d7073634008f36d758-i7M1wg> (referer: None)
+2017-06-14 16:19:53 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/8861eab10e60e1323b96f53faf4d7073634008f36d758-i7M1wg> referred in <None>
+2017-06-14 16:19:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/6e82626a82e652a4bf46243de2ec46cfdb05b2c166398-26zSc6> (referer: None)
+2017-06-14 16:19:53 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/6e82626a82e652a4bf46243de2ec46cfdb05b2c166398-26zSc6> referred in <None>
+2017-06-14 16:19:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185801225&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/8861eab10e60e1323b96f53faf4d7073634008f36d758-i7M1wg'], 'images': [{'url': 'http://img.hb.aicdn.com/8861eab10e60e1323b96f53faf4d7073634008f36d758-i7M1wg', 'path': 'full/77ac2d798dcc59bde6c5e763043e953a2dd382f1.jpg', 'checksum': '4f98aeeceb04aed54429613536743a5f'}]}
+2017-06-14 16:19:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/7578ebd6527f7b53eca4d5dd766fd315ec19b8a92ca83-AUqea6> (referer: None)
+2017-06-14 16:19:54 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/7578ebd6527f7b53eca4d5dd766fd315ec19b8a92ca83-AUqea6> referred in <None>
+2017-06-14 16:19:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/3252c2b50b7cc39bd92b68a5682fa20d3f2a85052a78b-55RdGh> (referer: None)
+2017-06-14 16:19:54 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/3252c2b50b7cc39bd92b68a5682fa20d3f2a85052a78b-55RdGh> referred in <None>
+2017-06-14 16:19:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185801225&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/6e82626a82e652a4bf46243de2ec46cfdb05b2c166398-26zSc6'], 'images': [{'url': 'http://img.hb.aicdn.com/6e82626a82e652a4bf46243de2ec46cfdb05b2c166398-26zSc6', 'path': 'full/36c96bf0cc16340cbfeb6abf78374a687b951465.jpg', 'checksum': '08875c1b6b89dc19a4a110f9bfa4953c'}]}
+2017-06-14 16:19:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185801225&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/7578ebd6527f7b53eca4d5dd766fd315ec19b8a92ca83-AUqea6'], 'images': [{'url': 'http://img.hb.aicdn.com/7578ebd6527f7b53eca4d5dd766fd315ec19b8a92ca83-AUqea6', 'path': 'full/d6f6ffb6f4234bd2e02b5429917b6ce85e60da0a.jpg', 'checksum': 'd1a9ffc9ced47ab78042501b2ceb03fb'}]}
+2017-06-14 16:19:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/2af7496c60ee232722f77727f05c3e592574678747fc1-Nms1HT> (referer: None)
+2017-06-14 16:19:54 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/2af7496c60ee232722f77727f05c3e592574678747fc1-Nms1HT> referred in <None>
+2017-06-14 16:19:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/23d5c94c5a4b8c509babcfa1e44e8b0e30baa9d3297d5-XDKBaa> (referer: None)
+2017-06-14 16:19:54 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/23d5c94c5a4b8c509babcfa1e44e8b0e30baa9d3297d5-XDKBaa> referred in <None>
+2017-06-14 16:19:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185801225&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/3252c2b50b7cc39bd92b68a5682fa20d3f2a85052a78b-55RdGh'], 'images': [{'url': 'http://img.hb.aicdn.com/3252c2b50b7cc39bd92b68a5682fa20d3f2a85052a78b-55RdGh', 'path': 'full/0162a3e79eccf2608e2d5db01457723d47ab9184.jpg', 'checksum': '510c6caa6b284f142a73e3624ca0c809'}]}
+2017-06-14 16:19:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185801225&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/2af7496c60ee232722f77727f05c3e592574678747fc1-Nms1HT'], 'images': [{'url': 'http://img.hb.aicdn.com/2af7496c60ee232722f77727f05c3e592574678747fc1-Nms1HT', 'path': 'full/392c43212acd309354c098915898bbc8a07871fb.jpg', 'checksum': '5f204b6fe43a5a5af1c6c49fb5153ca6'}]}
+2017-06-14 16:19:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185801225&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/23d5c94c5a4b8c509babcfa1e44e8b0e30baa9d3297d5-XDKBaa'], 'images': [{'url': 'http://img.hb.aicdn.com/23d5c94c5a4b8c509babcfa1e44e8b0e30baa9d3297d5-XDKBaa', 'path': 'full/888edc657acd0460d083d18803a908a3b27f0cc0.jpg', 'checksum': '019393cb48ec8292a67d45ca38d076ee'}]}
+2017-06-14 16:19:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/d7a67af14d01e1136d86bdcd50d193909772b0e291527-Ijhfjs> (referer: None)
+2017-06-14 16:19:57 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/d7a67af14d01e1136d86bdcd50d193909772b0e291527-Ijhfjs> referred in <None>
+2017-06-14 16:19:57 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185801225&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/d7a67af14d01e1136d86bdcd50d193909772b0e291527-Ijhfjs'], 'images': [{'url': 'http://img.hb.aicdn.com/d7a67af14d01e1136d86bdcd50d193909772b0e291527-Ijhfjs', 'path': 'full/209a270e95b95e9a76e46a6ac864712b29800fdb.jpg', 'checksum': '86d86ca5fdbed1954e58058c7b95ace5'}]}
+2017-06-14 16:19:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/51b084fd30efaaf44f75c4b4eeb01612fb00e2a1d471a-UABrmW> (referer: None)
+2017-06-14 16:19:59 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/51b084fd30efaaf44f75c4b4eeb01612fb00e2a1d471a-UABrmW> referred in <None>
+2017-06-14 16:19:59 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2017-06-14 16:19:59 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2017-06-14 16:19:59 [PIL.PngImagePlugin] DEBUG: b'sRGB' 41 1 (unknown)
+2017-06-14 16:19:59 [PIL.PngImagePlugin] DEBUG: STREAM b'iDOT' 54 28
+2017-06-14 16:19:59 [PIL.PngImagePlugin] DEBUG: b'iDOT' 54 28 (unknown)
+2017-06-14 16:19:59 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 94 16384
+2017-06-14 16:19:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185801225&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/51b084fd30efaaf44f75c4b4eeb01612fb00e2a1d471a-UABrmW'], 'images': [{'url': 'http://img.hb.aicdn.com/51b084fd30efaaf44f75c4b4eeb01612fb00e2a1d471a-UABrmW', 'path': 'full/c83f26cebf963734aaa88a938fd43075f581fb4b.jpg', 'checksum': '5c11824734fa62b19011a98ac11ebd8c'}]}
+2017-06-14 16:20:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/8f86d535e251c499e461fbeb5ed1562c8fe61d312a178-ElhKfT> (referer: None)
+2017-06-14 16:20:00 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/8f86d535e251c499e461fbeb5ed1562c8fe61d312a178-ElhKfT> referred in <None>
+2017-06-14 16:20:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185801225&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/8f86d535e251c499e461fbeb5ed1562c8fe61d312a178-ElhKfT'], 'images': [{'url': 'http://img.hb.aicdn.com/8f86d535e251c499e461fbeb5ed1562c8fe61d312a178-ElhKfT', 'path': 'full/7131fe208315b97e6a8a7ff8b2cd09e67a748168.jpg', 'checksum': '8e2fa25fcfb257a71b307d475a2b313e'}]}
+2017-06-14 16:20:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/4e77508cbaca92cc613ad99abcb0a77bb0d6a3e2332a6-TCaCA6> (referer: None)
+2017-06-14 16:20:01 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/4e77508cbaca92cc613ad99abcb0a77bb0d6a3e2332a6-TCaCA6> referred in <None>
+2017-06-14 16:20:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185801225&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/4e77508cbaca92cc613ad99abcb0a77bb0d6a3e2332a6-TCaCA6'], 'images': [{'url': 'http://img.hb.aicdn.com/4e77508cbaca92cc613ad99abcb0a77bb0d6a3e2332a6-TCaCA6', 'path': 'full/6344922cf088660a9ec0a507ff71f8f685c20fc0.jpg', 'checksum': '023d10c28fd253ab33a6c9368fa2878d'}]}
+2017-06-14 16:20:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/44a21f3ef6ca82436e4c4def26f136073963a8b769fd5-inARpG> (referer: None)
+2017-06-14 16:20:02 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/44a21f3ef6ca82436e4c4def26f136073963a8b769fd5-inARpG> referred in <None>
+2017-06-14 16:20:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/72ee0b7cf4c0b37a8a21a133c837d111c842651b334b8-gifgGf> (referer: None)
+2017-06-14 16:20:02 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/72ee0b7cf4c0b37a8a21a133c837d111c842651b334b8-gifgGf> referred in <None>
+2017-06-14 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185801225&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/44a21f3ef6ca82436e4c4def26f136073963a8b769fd5-inARpG'], 'images': [{'url': 'http://img.hb.aicdn.com/44a21f3ef6ca82436e4c4def26f136073963a8b769fd5-inARpG', 'path': 'full/e547bd1f7682766882e4eb430f366d69ebeeb113.jpg', 'checksum': 'e9aba3acbb225d5fb445c1c9398909ce'}]}
+2017-06-14 16:20:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185801225&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/72ee0b7cf4c0b37a8a21a133c837d111c842651b334b8-gifgGf'], 'images': [{'url': 'http://img.hb.aicdn.com/72ee0b7cf4c0b37a8a21a133c837d111c842651b334b8-gifgGf', 'path': 'full/75c51dc57d26f780d9a9e869b80089023df91267.jpg', 'checksum': '95dc63e84e06b0025f6bc86a70e3ce28'}]}
+2017-06-14 16:20:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/14fdacb2d3544f67afbf40f4456a7e6714ec549f2517d-nVhdff> (referer: None)
+2017-06-14 16:20:03 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/14fdacb2d3544f67afbf40f4456a7e6714ec549f2517d-nVhdff> referred in <None>
+2017-06-14 16:20:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185801225&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/14fdacb2d3544f67afbf40f4456a7e6714ec549f2517d-nVhdff'], 'images': [{'url': 'http://img.hb.aicdn.com/14fdacb2d3544f67afbf40f4456a7e6714ec549f2517d-nVhdff', 'path': 'full/3528533fce350d73de7c32797b7d90d49e1ebc5e.jpg', 'checksum': '3e9867b8578408b885bb98b1dcf65a56'}]}
+2017-06-14 16:20:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/a48115c94f89b2499f68cf8d783c19f134a23aac2725b-ZDNMMS> (referer: None)
+2017-06-14 16:20:06 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/a48115c94f89b2499f68cf8d783c19f134a23aac2725b-ZDNMMS> referred in <None>
+2017-06-14 16:20:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185801225&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/a48115c94f89b2499f68cf8d783c19f134a23aac2725b-ZDNMMS'], 'images': [{'url': 'http://img.hb.aicdn.com/a48115c94f89b2499f68cf8d783c19f134a23aac2725b-ZDNMMS', 'path': 'full/6619cdbc8f709e9d8aac1f099fca6ee054ac8590.jpg', 'checksum': 'c3e345e57c9bfcf4e3c5ad8cc1598f67'}]}
+2017-06-14 16:20:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/b3edbd946aac8a2cf572c6cb09fef4a8a82df98037ccc-7Da6G1> (referer: None)
+2017-06-14 16:20:08 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/b3edbd946aac8a2cf572c6cb09fef4a8a82df98037ccc-7Da6G1> referred in <None>
+2017-06-14 16:20:08 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185801225&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/b3edbd946aac8a2cf572c6cb09fef4a8a82df98037ccc-7Da6G1'], 'images': [{'url': 'http://img.hb.aicdn.com/b3edbd946aac8a2cf572c6cb09fef4a8a82df98037ccc-7Da6G1', 'path': 'full/6cc387cb8c4b9cc2b7417cd2d366add8e1d52bb9.jpg', 'checksum': '99d3773393d655d20e810f825f50f505'}]}
+2017-06-14 16:20:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/9da3bb4b4d55c4ca4898a827a7f6e9fd2d9ce36d10074-ERNCYe> (referer: None)
+2017-06-14 16:20:09 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/9da3bb4b4d55c4ca4898a827a7f6e9fd2d9ce36d10074-ERNCYe> referred in <None>
+2017-06-14 16:20:09 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185801225&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/9da3bb4b4d55c4ca4898a827a7f6e9fd2d9ce36d10074-ERNCYe'], 'images': [{'url': 'http://img.hb.aicdn.com/9da3bb4b4d55c4ca4898a827a7f6e9fd2d9ce36d10074-ERNCYe', 'path': 'full/98a3a0e84d1630fbe05855bcb98a254dc5d32efb.jpg', 'checksum': '53723b106d801dc78f1c6cd99196bf73'}]}
+2017-06-14 16:20:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/a89350d60e924b528c15b15b752013201d46993888e1c-43kKBb> (referer: None)
+2017-06-14 16:20:09 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/a89350d60e924b528c15b15b752013201d46993888e1c-43kKBb> referred in <None>
+2017-06-14 16:20:09 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185801225&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/a89350d60e924b528c15b15b752013201d46993888e1c-43kKBb'], 'images': [{'url': 'http://img.hb.aicdn.com/a89350d60e924b528c15b15b752013201d46993888e1c-43kKBb', 'path': 'full/30e7a434506db4ecb732ad0b9ca904484113eef3.jpg', 'checksum': '8b50c416dbff0c400110b9424cd5f2e7'}]}
+2017-06-14 16:20:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/788c4ab40ffd6ee85dd4c687e3161c77063aa91b6ce6d-cnYT3G> (referer: None)
+2017-06-14 16:20:10 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/788c4ab40ffd6ee85dd4c687e3161c77063aa91b6ce6d-cnYT3G> referred in <None>
+2017-06-14 16:20:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185801225&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/788c4ab40ffd6ee85dd4c687e3161c77063aa91b6ce6d-cnYT3G'], 'images': [{'url': 'http://img.hb.aicdn.com/788c4ab40ffd6ee85dd4c687e3161c77063aa91b6ce6d-cnYT3G', 'path': 'full/3fffb94124372864f05cab3e0ad3b7c657aab819.jpg', 'checksum': '5b3a08617ca6d94325ab8ad4eb3eac73'}]}
+2017-06-14 16:20:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/4e4d8228ca9ac1693047f4cc5c9f69082a66cbc953197-mvxpQe> (referer: None)
+2017-06-14 16:20:13 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/4e4d8228ca9ac1693047f4cc5c9f69082a66cbc953197-mvxpQe> referred in <None>
+2017-06-14 16:20:13 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185801225&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/4e4d8228ca9ac1693047f4cc5c9f69082a66cbc953197-mvxpQe'], 'images': [{'url': 'http://img.hb.aicdn.com/4e4d8228ca9ac1693047f4cc5c9f69082a66cbc953197-mvxpQe', 'path': 'full/a6d334b164b6909e9dcf253cf957809b974b66cb.jpg', 'checksum': '6c2beb49e54ba1a341f48ce3ea0fcbc3'}]}
+2017-06-14 16:20:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/2a181fc8bf440aa63a2f3b86d07aa36ed77174393a5fc-CLvFhp> (referer: None)
+2017-06-14 16:20:15 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/2a181fc8bf440aa63a2f3b86d07aa36ed77174393a5fc-CLvFhp> referred in <None>
+2017-06-14 16:20:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185801225&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/2a181fc8bf440aa63a2f3b86d07aa36ed77174393a5fc-CLvFhp'], 'images': [{'url': 'http://img.hb.aicdn.com/2a181fc8bf440aa63a2f3b86d07aa36ed77174393a5fc-CLvFhp', 'path': 'full/7f20eb17a29b3afc4d81df56f4f39e9b1b5a6628.jpg', 'checksum': '42107ed2d2252ce795c98e05c9a9e197'}]}
+2017-06-14 16:20:47 [scrapy.extensions.logstats] INFO: Crawled 63 pages (at 21 pages/min), scraped 58 items (at 20 items/min)
+2017-06-14 16:20:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://huaban.com/favorite/beauty/?j3vgljf1&max=1185021278&limit=20&wfl=1> (referer: http://huaban.com/favorite/beauty/?j3vgljf1&max=1185801225&limit=20&wfl=1)
+2017-06-14 16:20:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/c62cdd0f9d7b5f53f594bbc154188949034341ae61f8c-QNK2Lx> (referer: None)
+2017-06-14 16:20:59 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/c62cdd0f9d7b5f53f594bbc154188949034341ae61f8c-QNK2Lx> referred in <None>
+2017-06-14 16:21:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185021278&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/c62cdd0f9d7b5f53f594bbc154188949034341ae61f8c-QNK2Lx'], 'images': [{'url': 'http://img.hb.aicdn.com/c62cdd0f9d7b5f53f594bbc154188949034341ae61f8c-QNK2Lx', 'path': 'full/17692c7a0ab6be22af1c795b8478888bdaff8133.jpg', 'checksum': '2c70e20bd969b2f9c0ea513d10a495cf'}]}
+2017-06-14 16:21:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/1d6fcfce3fc904ee1119aec199fa0ef9421f6ae021478-OGG3bA> (referer: None)
+2017-06-14 16:21:00 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/1d6fcfce3fc904ee1119aec199fa0ef9421f6ae021478-OGG3bA> referred in <None>
+2017-06-14 16:21:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185021278&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/1d6fcfce3fc904ee1119aec199fa0ef9421f6ae021478-OGG3bA'], 'images': [{'url': 'http://img.hb.aicdn.com/1d6fcfce3fc904ee1119aec199fa0ef9421f6ae021478-OGG3bA', 'path': 'full/64eb131c0b72d239b418ee685d93b62bc025d6a4.jpg', 'checksum': 'a82588a532b88e518d76f940a12044e5'}]}
+2017-06-14 16:21:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/31f78713f8ab3bad753e4c65004f7cf90df218723358b-Jh69yk> (referer: None)
+2017-06-14 16:21:01 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/31f78713f8ab3bad753e4c65004f7cf90df218723358b-Jh69yk> referred in <None>
+2017-06-14 16:21:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185021278&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/31f78713f8ab3bad753e4c65004f7cf90df218723358b-Jh69yk'], 'images': [{'url': 'http://img.hb.aicdn.com/31f78713f8ab3bad753e4c65004f7cf90df218723358b-Jh69yk', 'path': 'full/f331d61ac73ebda4827326796f5e6561f3d36315.jpg', 'checksum': '768dda6c5df4020f478cb3ed9e0a4081'}]}
+2017-06-14 16:21:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/f380e45d66cc810f8af9dcc38919ae753b2b60b72fd0f-i5jjdy> (referer: None)
+2017-06-14 16:21:03 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/f380e45d66cc810f8af9dcc38919ae753b2b60b72fd0f-i5jjdy> referred in <None>
+2017-06-14 16:21:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/4d6e61b64e61a07cedd6d24f722f39355f99c033dc79-xdbp5K> (referer: None)
+2017-06-14 16:21:03 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/4d6e61b64e61a07cedd6d24f722f39355f99c033dc79-xdbp5K> referred in <None>
+2017-06-14 16:21:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185021278&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/f380e45d66cc810f8af9dcc38919ae753b2b60b72fd0f-i5jjdy'], 'images': [{'url': 'http://img.hb.aicdn.com/f380e45d66cc810f8af9dcc38919ae753b2b60b72fd0f-i5jjdy', 'path': 'full/38d5b9cf4e292f4d9204a95170375f1ebdc5f1bd.jpg', 'checksum': '0a282b5871eac8a41a97d9f167c4f527'}]}
+2017-06-14 16:21:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185021278&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/4d6e61b64e61a07cedd6d24f722f39355f99c033dc79-xdbp5K'], 'images': [{'url': 'http://img.hb.aicdn.com/4d6e61b64e61a07cedd6d24f722f39355f99c033dc79-xdbp5K', 'path': 'full/37a86e28b0554079661a01cf97b2e844aead3940.jpg', 'checksum': '16d2879b920519233889e9e4d0da3a95'}]}
+2017-06-14 16:21:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/0d8d9bbe6d9e537a43c9546dc4da6165c478003f3c789-Colzfr> (referer: None)
+2017-06-14 16:21:04 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/0d8d9bbe6d9e537a43c9546dc4da6165c478003f3c789-Colzfr> referred in <None>
+2017-06-14 16:21:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185021278&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/0d8d9bbe6d9e537a43c9546dc4da6165c478003f3c789-Colzfr'], 'images': [{'url': 'http://img.hb.aicdn.com/0d8d9bbe6d9e537a43c9546dc4da6165c478003f3c789-Colzfr', 'path': 'full/2a1c4e1d6e5a571524164af2249ee81a862dfa96.jpg', 'checksum': '92e0ccfd1cf69b6210cb916e4f9134eb'}]}
+2017-06-14 16:21:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/8f2a2b29c4fc5ec9c041c9fba19803cb8c42f46648239-uTqrbg> (referer: None)
+2017-06-14 16:21:08 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/8f2a2b29c4fc5ec9c041c9fba19803cb8c42f46648239-uTqrbg> referred in <None>
+2017-06-14 16:21:08 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185021278&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/8f2a2b29c4fc5ec9c041c9fba19803cb8c42f46648239-uTqrbg'], 'images': [{'url': 'http://img.hb.aicdn.com/8f2a2b29c4fc5ec9c041c9fba19803cb8c42f46648239-uTqrbg', 'path': 'full/67f4faa36c47ac42b0bbfc1c960863efd73004f5.jpg', 'checksum': 'f8b857adbd0de271b81d5ac363894c0b'}]}
+2017-06-14 16:21:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://huaban.com/favorite/beauty/?j3vgljf1&max=1182884715&limit=20&wfl=1> (referer: http://huaban.com/favorite/beauty/?j3vgljf1&max=1185021278&limit=20&wfl=1)
+2017-06-14 16:21:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/70cf1098638964e1d0d742d7d16d7885cf864da7a2670-HpSsPK> (referer: None)
+2017-06-14 16:21:11 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/70cf1098638964e1d0d742d7d16d7885cf864da7a2670-HpSsPK> referred in <None>
+2017-06-14 16:21:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185021278&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/70cf1098638964e1d0d742d7d16d7885cf864da7a2670-HpSsPK'], 'images': [{'url': 'http://img.hb.aicdn.com/70cf1098638964e1d0d742d7d16d7885cf864da7a2670-HpSsPK', 'path': 'full/c7817b96b3a8c9a9d96301ad9c29ee8d6eb7c487.jpg', 'checksum': '9e4c35fddb307cf74156902967b85b85'}]}
+2017-06-14 16:21:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/f6b0be78955d1410cb99e270102c52f5054b5e4750485-I8i48c> (referer: None)
+2017-06-14 16:21:12 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/f6b0be78955d1410cb99e270102c52f5054b5e4750485-I8i48c> referred in <None>
+2017-06-14 16:21:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185021278&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/f6b0be78955d1410cb99e270102c52f5054b5e4750485-I8i48c'], 'images': [{'url': 'http://img.hb.aicdn.com/f6b0be78955d1410cb99e270102c52f5054b5e4750485-I8i48c', 'path': 'full/850e9c8582937fc2650958ce1c1ff1e837d44765.jpg', 'checksum': '622ec45c47cac4da760c0c15b6a4fc5e'}]}
+2017-06-14 16:21:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/67307ae8e9e7db011c2787e08a08a41945cbeda619e85-J4Pe4l> (referer: None)
+2017-06-14 16:21:13 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/67307ae8e9e7db011c2787e08a08a41945cbeda619e85-J4Pe4l> referred in <None>
+2017-06-14 16:21:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/8b3a6c6cfa65b51839b51bb9cbd1c870bb6b893910129-kz3YDI> (referer: None)
+2017-06-14 16:21:13 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/8b3a6c6cfa65b51839b51bb9cbd1c870bb6b893910129-kz3YDI> referred in <None>
+2017-06-14 16:21:13 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185021278&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/67307ae8e9e7db011c2787e08a08a41945cbeda619e85-J4Pe4l'], 'images': [{'url': 'http://img.hb.aicdn.com/67307ae8e9e7db011c2787e08a08a41945cbeda619e85-J4Pe4l', 'path': 'full/ea4c37a730766f525a768f0f0d40cd689bb3d6b0.jpg', 'checksum': 'e9e133364f105d1fdaa4173b92acfa1c'}]}
+2017-06-14 16:21:13 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185021278&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/8b3a6c6cfa65b51839b51bb9cbd1c870bb6b893910129-kz3YDI'], 'images': [{'url': 'http://img.hb.aicdn.com/8b3a6c6cfa65b51839b51bb9cbd1c870bb6b893910129-kz3YDI', 'path': 'full/9f7c854fdcf8d7af4918e205e5ad7013863f9b7d.jpg', 'checksum': 'c388a99516c96b069567872d9e2d6b19'}]}
+2017-06-14 16:21:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/4d91d6fe3899f2f5f6b46889041cd4bff257bbf513103-Bl0ulX> (referer: None)
+2017-06-14 16:21:14 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/4d91d6fe3899f2f5f6b46889041cd4bff257bbf513103-Bl0ulX> referred in <None>
+2017-06-14 16:21:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/03e5006946681f2ee2228c3b0cee19a4036f6f1ed72f-wBCdEe> (referer: None)
+2017-06-14 16:21:14 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/03e5006946681f2ee2228c3b0cee19a4036f6f1ed72f-wBCdEe> referred in <None>
+2017-06-14 16:21:14 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185021278&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/4d91d6fe3899f2f5f6b46889041cd4bff257bbf513103-Bl0ulX'], 'images': [{'url': 'http://img.hb.aicdn.com/4d91d6fe3899f2f5f6b46889041cd4bff257bbf513103-Bl0ulX', 'path': 'full/bdd0b3fbe34f8ac2ee2e9315ad1a1f5a2b6e6f11.jpg', 'checksum': 'b5909d2a23e502d45d66480bf8224654'}]}
+2017-06-14 16:21:14 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185021278&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/03e5006946681f2ee2228c3b0cee19a4036f6f1ed72f-wBCdEe'], 'images': [{'url': 'http://img.hb.aicdn.com/03e5006946681f2ee2228c3b0cee19a4036f6f1ed72f-wBCdEe', 'path': 'full/de1b4de15c514656aeba23dc1dc9a2cfc98a07bc.jpg', 'checksum': '127d72ae01383daa7069ca3b2213ca51'}]}
+2017-06-14 16:21:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/306714a85cf5967c94a349bb8fd6e6140d731605107b8-z8U36B> (referer: None)
+2017-06-14 16:21:19 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/306714a85cf5967c94a349bb8fd6e6140d731605107b8-z8U36B> referred in <None>
+2017-06-14 16:21:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185021278&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/306714a85cf5967c94a349bb8fd6e6140d731605107b8-z8U36B'], 'images': [{'url': 'http://img.hb.aicdn.com/306714a85cf5967c94a349bb8fd6e6140d731605107b8-z8U36B', 'path': 'full/d5e53722c13e95febeb326e5c3b966453b7f4e8e.jpg', 'checksum': 'd45d8d70d0a0d0a3aa93fd4050fa7264'}]}
+2017-06-14 16:21:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/d112bb5d0212cf08115dbe05f1fd2ff208fcde2211b9e-VNsdy9> (referer: None)
+2017-06-14 16:21:19 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/d112bb5d0212cf08115dbe05f1fd2ff208fcde2211b9e-VNsdy9> referred in <None>
+2017-06-14 16:21:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185021278&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/d112bb5d0212cf08115dbe05f1fd2ff208fcde2211b9e-VNsdy9'], 'images': [{'url': 'http://img.hb.aicdn.com/d112bb5d0212cf08115dbe05f1fd2ff208fcde2211b9e-VNsdy9', 'path': 'full/f33eefdfc603a6535664002ede443ac3db923d8c.jpg', 'checksum': 'a2ff7be4f209e965f16c8e9bb9c76b21'}]}
+2017-06-14 16:21:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/5fdd2be89c7b6b3136ae6f5c5a051308e71c6f5146049-AkhnT9> (referer: None)
+2017-06-14 16:21:22 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/5fdd2be89c7b6b3136ae6f5c5a051308e71c6f5146049-AkhnT9> referred in <None>
+2017-06-14 16:21:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/52d479d6cff9baeb897150f526e249ab645bb83964672-pZOWnr> (referer: None)
+2017-06-14 16:21:22 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/52d479d6cff9baeb897150f526e249ab645bb83964672-pZOWnr> referred in <None>
+2017-06-14 16:21:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1182884715&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/5fdd2be89c7b6b3136ae6f5c5a051308e71c6f5146049-AkhnT9'], 'images': [{'url': 'http://img.hb.aicdn.com/5fdd2be89c7b6b3136ae6f5c5a051308e71c6f5146049-AkhnT9', 'path': 'full/b44e96584646d66c5c88943d712f2ef823b5c720.jpg', 'checksum': '3443b4f6fd4f241d3f51b3a90d6b8ce8'}]}
+2017-06-14 16:21:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185021278&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/52d479d6cff9baeb897150f526e249ab645bb83964672-pZOWnr'], 'images': [{'url': 'http://img.hb.aicdn.com/52d479d6cff9baeb897150f526e249ab645bb83964672-pZOWnr', 'path': 'full/ae6522f7df06435a0791d7f35dea8938d7045103.jpg', 'checksum': '0aaafdd481bf3c2134bd61252ff5ce8c'}]}
+2017-06-14 16:21:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/b081d28aa51f9713d6ff09a134cb604a8f930fb536b3d-DKMZWA> (referer: None)
+2017-06-14 16:21:24 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/b081d28aa51f9713d6ff09a134cb604a8f930fb536b3d-DKMZWA> referred in <None>
+2017-06-14 16:21:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1182884715&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/b081d28aa51f9713d6ff09a134cb604a8f930fb536b3d-DKMZWA'], 'images': [{'url': 'http://img.hb.aicdn.com/b081d28aa51f9713d6ff09a134cb604a8f930fb536b3d-DKMZWA', 'path': 'full/23002c6872a10c5103083cb4876023c5e49c48b0.jpg', 'checksum': '6ddb5d8e40d14e360f554edddcdecce1'}]}
+2017-06-14 16:21:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/b8b79e5cfce16742092acf2ad5fec7983c7fc5e66a0d1-Q4ufkU> (referer: None)
+2017-06-14 16:21:26 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/b8b79e5cfce16742092acf2ad5fec7983c7fc5e66a0d1-Q4ufkU> referred in <None>
+2017-06-14 16:21:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185021278&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/b8b79e5cfce16742092acf2ad5fec7983c7fc5e66a0d1-Q4ufkU'], 'images': [{'url': 'http://img.hb.aicdn.com/b8b79e5cfce16742092acf2ad5fec7983c7fc5e66a0d1-Q4ufkU', 'path': 'full/cc49cfc92f782c34489da9b76dcecf51bd305088.jpg', 'checksum': '45fca90187fda4a42a8746548c04a745'}]}
+2017-06-14 16:21:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/b1633fd4e6982f5ca42741142a1bda7a08759aafcf1b3-NBuZXF> (referer: None)
+2017-06-14 16:21:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/b1633fd4e6982f5ca42741142a1bda7a08759aafcf1b3-NBuZXF> referred in <None>
+2017-06-14 16:21:33 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2017-06-14 16:21:33 [PIL.PngImagePlugin] DEBUG: STREAM b'sRGB' 41 1
+2017-06-14 16:21:33 [PIL.PngImagePlugin] DEBUG: b'sRGB' 41 1 (unknown)
+2017-06-14 16:21:33 [PIL.PngImagePlugin] DEBUG: STREAM b'iDOT' 54 28
+2017-06-14 16:21:33 [PIL.PngImagePlugin] DEBUG: b'iDOT' 54 28 (unknown)
+2017-06-14 16:21:33 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 94 16384
+2017-06-14 16:21:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/96e42380d9fc7674c078cdfa65a2a48c75a432c717b1c-7BgSq0> (referer: None)
+2017-06-14 16:21:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/96e42380d9fc7674c078cdfa65a2a48c75a432c717b1c-7BgSq0> referred in <None>
+2017-06-14 16:21:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1182884715&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/b1633fd4e6982f5ca42741142a1bda7a08759aafcf1b3-NBuZXF'], 'images': [{'url': 'http://img.hb.aicdn.com/b1633fd4e6982f5ca42741142a1bda7a08759aafcf1b3-NBuZXF', 'path': 'full/4c308c5401bb1b23d1ae684ae122ac137d63db28.jpg', 'checksum': 'f8e04f030c064139d95c8f40e07a6cb7'}]}
+2017-06-14 16:21:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1182884715&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/96e42380d9fc7674c078cdfa65a2a48c75a432c717b1c-7BgSq0'], 'images': [{'url': 'http://img.hb.aicdn.com/96e42380d9fc7674c078cdfa65a2a48c75a432c717b1c-7BgSq0', 'path': 'full/1636e79bea8791c69748cecf4d563b56f7cc6406.jpg', 'checksum': 'b4cd3e3d4f5ffe6f34f216dde16c9207'}]}
+2017-06-14 16:21:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/bdbbc29bbb1956e3aa038427fc0b7f3ca141ec7420a29-THboQj> (referer: None)
+2017-06-14 16:21:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/bdbbc29bbb1956e3aa038427fc0b7f3ca141ec7420a29-THboQj> referred in <None>
+2017-06-14 16:21:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1182884715&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/bdbbc29bbb1956e3aa038427fc0b7f3ca141ec7420a29-THboQj'], 'images': [{'url': 'http://img.hb.aicdn.com/bdbbc29bbb1956e3aa038427fc0b7f3ca141ec7420a29-THboQj', 'path': 'full/9c445125a7c13abf104671b4d3aa1e13cb625394.jpg', 'checksum': '149e8f1cc92c1b5074980ba08f880978'}]}
+2017-06-14 16:21:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/1d8f16e470b67fe99031781ca9a9a339de1d7b7330cd5-QCVz4S> (referer: None)
+2017-06-14 16:21:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/1d8f16e470b67fe99031781ca9a9a339de1d7b7330cd5-QCVz4S> referred in <None>
+2017-06-14 16:21:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/4856df1313649f9847aa163a5917737fc2df57d724af7-5xLfFD> (referer: None)
+2017-06-14 16:21:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/4856df1313649f9847aa163a5917737fc2df57d724af7-5xLfFD> referred in <None>
+2017-06-14 16:21:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1182884715&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/1d8f16e470b67fe99031781ca9a9a339de1d7b7330cd5-QCVz4S'], 'images': [{'url': 'http://img.hb.aicdn.com/1d8f16e470b67fe99031781ca9a9a339de1d7b7330cd5-QCVz4S', 'path': 'full/13ac5b349a111abbdeca8a8cc8db8055bffddc4c.jpg', 'checksum': '4cb3a301979e09a74304c5c10d5e2f53'}]}
+2017-06-14 16:21:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1182884715&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/4856df1313649f9847aa163a5917737fc2df57d724af7-5xLfFD'], 'images': [{'url': 'http://img.hb.aicdn.com/4856df1313649f9847aa163a5917737fc2df57d724af7-5xLfFD', 'path': 'full/92090e1cb51aff01db55e0d52a90a70c921ba2ee.jpg', 'checksum': '567a01d0f0a764ee85c707384f96ecd7'}]}
+2017-06-14 16:21:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/7e7981d125c93bb5b46e471d7a521f05ecbcb92429169-49PfCi> (referer: None)
+2017-06-14 16:21:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/7e7981d125c93bb5b46e471d7a521f05ecbcb92429169-49PfCi> referred in <None>
+2017-06-14 16:21:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/8ef8ffbd49a159bfdd7b6d74fb32a43e990c1bdc10447-UQ2c4C> (referer: None)
+2017-06-14 16:21:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/8ef8ffbd49a159bfdd7b6d74fb32a43e990c1bdc10447-UQ2c4C> referred in <None>
+2017-06-14 16:21:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1182884715&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/7e7981d125c93bb5b46e471d7a521f05ecbcb92429169-49PfCi'], 'images': [{'url': 'http://img.hb.aicdn.com/7e7981d125c93bb5b46e471d7a521f05ecbcb92429169-49PfCi', 'path': 'full/dda44c7d43e8d299b9914d3498a6c5d718b8db60.jpg', 'checksum': 'c38aa3bf2e38aa8b2fa4c86af1532bcb'}]}
+2017-06-14 16:21:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1182884715&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/8ef8ffbd49a159bfdd7b6d74fb32a43e990c1bdc10447-UQ2c4C'], 'images': [{'url': 'http://img.hb.aicdn.com/8ef8ffbd49a159bfdd7b6d74fb32a43e990c1bdc10447-UQ2c4C', 'path': 'full/aff3787bd8ee473a63d97ba7e974d43c29c355bc.jpg', 'checksum': '3c4a51c04f2f7320fb304ad5e42f1213'}]}
+2017-06-14 16:21:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/207a3a2f5c460854f9549d0de20c63e0e4425acb1d1bd-0HEr4Y> (referer: None)
+2017-06-14 16:21:36 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/207a3a2f5c460854f9549d0de20c63e0e4425acb1d1bd-0HEr4Y> referred in <None>
+2017-06-14 16:21:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/965960dba9584d79935e0af5060959424ca5712cfef2-ev6ISx> (referer: None)
+2017-06-14 16:21:36 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/965960dba9584d79935e0af5060959424ca5712cfef2-ev6ISx> referred in <None>
+2017-06-14 16:21:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1182884715&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/207a3a2f5c460854f9549d0de20c63e0e4425acb1d1bd-0HEr4Y'], 'images': [{'url': 'http://img.hb.aicdn.com/207a3a2f5c460854f9549d0de20c63e0e4425acb1d1bd-0HEr4Y', 'path': 'full/1a1a6e9968d8ef200d28244ae5d3a96353cc385c.jpg', 'checksum': '3facf9b9de9f87ddcf3994c053c55539'}]}
+2017-06-14 16:21:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1182884715&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/965960dba9584d79935e0af5060959424ca5712cfef2-ev6ISx'], 'images': [{'url': 'http://img.hb.aicdn.com/965960dba9584d79935e0af5060959424ca5712cfef2-ev6ISx', 'path': 'full/c90e26f3db76754d9c6f233846cff3951a65b363.jpg', 'checksum': '5b6a157825863ce488cab26316c7d8f1'}]}
+2017-06-14 16:21:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/4c6f209298540003824d106ceb50f8c1b0f8eec739b47-eoMkL0> (referer: None)
+2017-06-14 16:21:37 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/4c6f209298540003824d106ceb50f8c1b0f8eec739b47-eoMkL0> referred in <None>
+2017-06-14 16:21:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1182884715&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/4c6f209298540003824d106ceb50f8c1b0f8eec739b47-eoMkL0'], 'images': [{'url': 'http://img.hb.aicdn.com/4c6f209298540003824d106ceb50f8c1b0f8eec739b47-eoMkL0', 'path': 'full/7493b9151bab71f0cc5d1fba6ea798f5f58c4ce8.jpg', 'checksum': '54cfd7e089d46b084a691f29158bb641'}]}
+2017-06-14 16:21:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/5124a231f87638bd0dc0c741705dceeda47d67e022ea3-ThWb3S> (referer: None)
+2017-06-14 16:21:38 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/5124a231f87638bd0dc0c741705dceeda47d67e022ea3-ThWb3S> referred in <None>
+2017-06-14 16:21:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1182884715&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/5124a231f87638bd0dc0c741705dceeda47d67e022ea3-ThWb3S'], 'images': [{'url': 'http://img.hb.aicdn.com/5124a231f87638bd0dc0c741705dceeda47d67e022ea3-ThWb3S', 'path': 'full/ddaa4efee78b0c48d2874f88d81e23aed506f6ac.jpg', 'checksum': 'f7c7a70fdb9fd05d2f9a9c150019e2bf'}]}
+2017-06-14 16:21:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/aef43c0b149ed287e54c22fcea2af59ce480e45feaa24-GHXrvr> (referer: None)
+2017-06-14 16:21:44 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/aef43c0b149ed287e54c22fcea2af59ce480e45feaa24-GHXrvr> referred in <None>
+2017-06-14 16:21:45 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1182884715&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/aef43c0b149ed287e54c22fcea2af59ce480e45feaa24-GHXrvr'], 'images': [{'url': 'http://img.hb.aicdn.com/aef43c0b149ed287e54c22fcea2af59ce480e45feaa24-GHXrvr', 'path': 'full/ff3c618f8740fe81f84187594d225290669c2038.jpg', 'checksum': '28db4bfd1aaab76aff711e2bd08ab1bb'}]}
+2017-06-14 16:21:47 [scrapy.extensions.logstats] INFO: Crawled 96 pages (at 33 pages/min), scraped 89 items (at 31 items/min)
+2017-06-14 16:21:48 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://img.hb.aicdn.com/6f859394cbefd4e7798a6d1073257032fe763541f7cc-jx96H7> (failed 1 times): User timeout caused connection failure: Getting http://img.hb.aicdn.com/6f859394cbefd4e7798a6d1073257032fe763541f7cc-jx96H7 took longer than 180.0 seconds..
+2017-06-14 16:21:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/52be2acfe4509e783ba5ad7f62bed8bb8147fc84cea8-TnKP5x> (referer: None)
+2017-06-14 16:21:48 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/52be2acfe4509e783ba5ad7f62bed8bb8147fc84cea8-TnKP5x> referred in <None>
+2017-06-14 16:21:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1182884715&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/52be2acfe4509e783ba5ad7f62bed8bb8147fc84cea8-TnKP5x'], 'images': [{'url': 'http://img.hb.aicdn.com/52be2acfe4509e783ba5ad7f62bed8bb8147fc84cea8-TnKP5x', 'path': 'full/abfaac86e4abb242934930db1c29be4de84f07eb.jpg', 'checksum': '8ed8749a58022c34eebd1cfcf94843b9'}]}
+2017-06-14 16:21:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/a85ee1ffbfcf68f0ae57accad8bc923d238945634738a-WsHc8j> (referer: None)
+2017-06-14 16:21:48 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/a85ee1ffbfcf68f0ae57accad8bc923d238945634738a-WsHc8j> referred in <None>
+2017-06-14 16:21:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1182884715&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/a85ee1ffbfcf68f0ae57accad8bc923d238945634738a-WsHc8j'], 'images': [{'url': 'http://img.hb.aicdn.com/a85ee1ffbfcf68f0ae57accad8bc923d238945634738a-WsHc8j', 'path': 'full/a89458b570bbfe3b721e6aef1ed1d5d55f28cf1a.jpg', 'checksum': '6ce91861882aa5827b372d662e862876'}]}
+2017-06-14 16:21:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/bd76ef88a54be867c01e7ebbaa213707a94f45a97cc76-qYlZVy> (referer: None)
+2017-06-14 16:21:52 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/bd76ef88a54be867c01e7ebbaa213707a94f45a97cc76-qYlZVy> referred in <None>
+2017-06-14 16:21:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/6f859394cbefd4e7798a6d1073257032fe763541f7cc-jx96H7> (referer: None)
+2017-06-14 16:21:52 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/6f859394cbefd4e7798a6d1073257032fe763541f7cc-jx96H7> referred in <None>
+2017-06-14 16:21:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1182884715&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/bd76ef88a54be867c01e7ebbaa213707a94f45a97cc76-qYlZVy'], 'images': [{'url': 'http://img.hb.aicdn.com/bd76ef88a54be867c01e7ebbaa213707a94f45a97cc76-qYlZVy', 'path': 'full/f817257a33e568180360a4a66c43927e4ced5549.jpg', 'checksum': '836071e4ed55c115a1177225a8293922'}]}
+2017-06-14 16:21:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/>
+{'image_urls': ['http://img.hb.aicdn.com/6f859394cbefd4e7798a6d1073257032fe763541f7cc-jx96H7'], 'images': [{'url': 'http://img.hb.aicdn.com/6f859394cbefd4e7798a6d1073257032fe763541f7cc-jx96H7', 'path': 'full/9e2944433d0aac60e1d1d029ff04972891784faa.jpg', 'checksum': 'ca778b93cbedb4caecde64558caacf40'}]}
+2017-06-14 16:21:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/57e13de45f8ee30033913b491d74afedfe1e7dca35cfd-HdxSuC> (referer: None)
+2017-06-14 16:21:55 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/57e13de45f8ee30033913b491d74afedfe1e7dca35cfd-HdxSuC> referred in <None>
+2017-06-14 16:21:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1182884715&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/57e13de45f8ee30033913b491d74afedfe1e7dca35cfd-HdxSuC'], 'images': [{'url': 'http://img.hb.aicdn.com/57e13de45f8ee30033913b491d74afedfe1e7dca35cfd-HdxSuC', 'path': 'full/9d685a3d1e63ab07904214c428b8447ba6cf28ca.jpg', 'checksum': 'dcd79cda60c0dca9f35f637a0cce9e51'}]}
+2017-06-14 16:21:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/03e55e8cc2309aff4ad28187133d29a1ff15620eb9792-cWM3Jr> (referer: None)
+2017-06-14 16:21:57 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/03e55e8cc2309aff4ad28187133d29a1ff15620eb9792-cWM3Jr> referred in <None>
+2017-06-14 16:21:57 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185021278&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/03e55e8cc2309aff4ad28187133d29a1ff15620eb9792-cWM3Jr'], 'images': [{'url': 'http://img.hb.aicdn.com/03e55e8cc2309aff4ad28187133d29a1ff15620eb9792-cWM3Jr', 'path': 'full/44ffc01e335b5216fb4aa87590400c7cef53c81e.jpg', 'checksum': 'e408f7553f18e54255c9b0458825b410'}]}
+2017-06-14 16:22:03 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://img.hb.aicdn.com/2b1d660be22ce6d028a7a0cbcc54b3ff4f13324053408-4myOwA> (failed 1 times): User timeout caused connection failure: Getting http://img.hb.aicdn.com/2b1d660be22ce6d028a7a0cbcc54b3ff4f13324053408-4myOwA took longer than 180.0 seconds..
+2017-06-14 16:22:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/9cada86efc9dfe3290c0375f7c2501e774c7111a18b46-542NFx> (referer: None)
+2017-06-14 16:22:04 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/9cada86efc9dfe3290c0375f7c2501e774c7111a18b46-542NFx> referred in <None>
+2017-06-14 16:22:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1182884715&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/9cada86efc9dfe3290c0375f7c2501e774c7111a18b46-542NFx'], 'images': [{'url': 'http://img.hb.aicdn.com/9cada86efc9dfe3290c0375f7c2501e774c7111a18b46-542NFx', 'path': 'full/eb7f0b87f336fa37bec97caaa7cb8ce327583355.jpg', 'checksum': 'cd34be9a6ff5faf160f338997c1ef241'}]}
+2017-06-14 16:22:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/2b1d660be22ce6d028a7a0cbcc54b3ff4f13324053408-4myOwA> (referer: None)
+2017-06-14 16:22:07 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/2b1d660be22ce6d028a7a0cbcc54b3ff4f13324053408-4myOwA> referred in <None>
+2017-06-14 16:22:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1186939080&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/2b1d660be22ce6d028a7a0cbcc54b3ff4f13324053408-4myOwA'], 'images': [{'url': 'http://img.hb.aicdn.com/2b1d660be22ce6d028a7a0cbcc54b3ff4f13324053408-4myOwA', 'path': 'full/5ee9f671626e2a9b6dbb7c25b706e56c64e1650c.jpg', 'checksum': '91da0ddf3f137e710282944a84600a9f'}]}
+2017-06-14 16:22:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/9b152ace3ac2d53949aa34ff48ce20784b7d4393210bab-lMDi1E> (referer: None)
+2017-06-14 16:22:30 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/9b152ace3ac2d53949aa34ff48ce20784b7d4393210bab-lMDi1E> referred in <None>
+2017-06-14 16:22:30 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1182884715&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/9b152ace3ac2d53949aa34ff48ce20784b7d4393210bab-lMDi1E'], 'images': [{'url': 'http://img.hb.aicdn.com/9b152ace3ac2d53949aa34ff48ce20784b7d4393210bab-lMDi1E', 'path': 'full/8b4ab06702fdaf650fe106e5bf4dd8dc7e7d6175.jpg', 'checksum': 'e0bd70948f2b89e66857c36f792990d8'}]}
+2017-06-14 16:22:47 [scrapy.extensions.logstats] INFO: Crawled 105 pages (at 9 pages/min), scraped 98 items (at 9 items/min)
+2017-06-14 16:23:47 [scrapy.extensions.logstats] INFO: Crawled 105 pages (at 0 pages/min), scraped 98 items (at 0 items/min)
+2017-06-14 16:23:57 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://img.hb.aicdn.com/c4b1924c902bea943f51835fd4df231fa6c2c2f28150a-oqUMdL> (failed 1 times): User timeout caused connection failure: Getting http://img.hb.aicdn.com/c4b1924c902bea943f51835fd4df231fa6c2c2f28150a-oqUMdL took longer than 180.0 seconds..
+2017-06-14 16:23:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/c4b1924c902bea943f51835fd4df231fa6c2c2f28150a-oqUMdL> (referer: None)
+2017-06-14 16:23:57 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/c4b1924c902bea943f51835fd4df231fa6c2c2f28150a-oqUMdL> referred in <None>
+2017-06-14 16:23:57 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185021278&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/c4b1924c902bea943f51835fd4df231fa6c2c2f28150a-oqUMdL'], 'images': [{'url': 'http://img.hb.aicdn.com/c4b1924c902bea943f51835fd4df231fa6c2c2f28150a-oqUMdL', 'path': 'full/d5872d1a54bcde8d751cf3e23f4696810c6a1540.jpg', 'checksum': '9b0148988db91e5f52ed7718e5695fa3'}]}
+2017-06-14 16:24:14 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://img.hb.aicdn.com/f29f9dae39c2b05e12ba57caee2807a7541db29e29542-PTXusQ> (failed 1 times): User timeout caused connection failure: Getting http://img.hb.aicdn.com/f29f9dae39c2b05e12ba57caee2807a7541db29e29542-PTXusQ took longer than 180.0 seconds..
+2017-06-14 16:24:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/f29f9dae39c2b05e12ba57caee2807a7541db29e29542-PTXusQ> (referer: None)
+2017-06-14 16:24:15 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/f29f9dae39c2b05e12ba57caee2807a7541db29e29542-PTXusQ> referred in <None>
+2017-06-14 16:24:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1185021278&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/f29f9dae39c2b05e12ba57caee2807a7541db29e29542-PTXusQ'], 'images': [{'url': 'http://img.hb.aicdn.com/f29f9dae39c2b05e12ba57caee2807a7541db29e29542-PTXusQ', 'path': 'full/91777085fa2ee6715887351b8e7881205100c9ee.jpg', 'checksum': 'fac3a60b1c709ab8768df804a7229569'}]}
+2017-06-14 16:24:36 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://huaban.com/favorite/beauty/?j3vgljf1&max=1180199965&limit=20&wfl=1> (failed 1 times): User timeout caused connection failure: Getting http://huaban.com/favorite/beauty/?j3vgljf1&max=1180199965&limit=20&wfl=1 took longer than 180.0 seconds..
+2017-06-14 16:24:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://huaban.com/favorite/beauty/?j3vgljf1&max=1180199965&limit=20&wfl=1> (referer: http://huaban.com/favorite/beauty/?j3vgljf1&max=1182884715&limit=20&wfl=1)
+2017-06-14 16:24:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/907628e7728efc64ff132b1e6b6566a6ac64e9cc27eb8-Xtn0e8> (referer: None)
+2017-06-14 16:24:37 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/907628e7728efc64ff132b1e6b6566a6ac64e9cc27eb8-Xtn0e8> referred in <None>
+2017-06-14 16:24:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1180199965&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/907628e7728efc64ff132b1e6b6566a6ac64e9cc27eb8-Xtn0e8'], 'images': [{'url': 'http://img.hb.aicdn.com/907628e7728efc64ff132b1e6b6566a6ac64e9cc27eb8-Xtn0e8', 'path': 'full/97b5439fbd93b1016772277dc93bdbb03e778f3b.jpg', 'checksum': 'c224222ff7e816bc78ba2518feca04b4'}]}
+2017-06-14 16:24:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/cdf0de8b0169f89f2de44b437bd0611f58d3e145283cb-dUA5x0> (referer: None)
+2017-06-14 16:24:38 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/cdf0de8b0169f89f2de44b437bd0611f58d3e145283cb-dUA5x0> referred in <None>
+2017-06-14 16:24:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1180199965&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/cdf0de8b0169f89f2de44b437bd0611f58d3e145283cb-dUA5x0'], 'images': [{'url': 'http://img.hb.aicdn.com/cdf0de8b0169f89f2de44b437bd0611f58d3e145283cb-dUA5x0', 'path': 'full/40b9dc9a4a1d07f6cc2be559bcdb64038612bcc7.jpg', 'checksum': 'c81618deebe53de2769153bb4e207a7c'}]}
+2017-06-14 16:24:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/fb2b1f2df9b5a5da8687c80f60c1199686646b0ca95f-865yGC> (referer: None)
+2017-06-14 16:24:40 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/fb2b1f2df9b5a5da8687c80f60c1199686646b0ca95f-865yGC> referred in <None>
+2017-06-14 16:24:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/6e1e1caf46a8162aeb57e2ecc3d0eb89858e3029d5a8-XmBb8c> (referer: None)
+2017-06-14 16:24:40 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/6e1e1caf46a8162aeb57e2ecc3d0eb89858e3029d5a8-XmBb8c> referred in <None>
+2017-06-14 16:24:40 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1180199965&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/fb2b1f2df9b5a5da8687c80f60c1199686646b0ca95f-865yGC'], 'images': [{'url': 'http://img.hb.aicdn.com/fb2b1f2df9b5a5da8687c80f60c1199686646b0ca95f-865yGC', 'path': 'full/a39ac9c180d4541cd71c4b11bfb0c60bede269d7.jpg', 'checksum': '27932b3b8e14126b76fae3b199e8db46'}]}
+2017-06-14 16:24:40 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1180199965&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/6e1e1caf46a8162aeb57e2ecc3d0eb89858e3029d5a8-XmBb8c'], 'images': [{'url': 'http://img.hb.aicdn.com/6e1e1caf46a8162aeb57e2ecc3d0eb89858e3029d5a8-XmBb8c', 'path': 'full/d90444d6131fa8863a244d9486a6e34c858c5ed4.jpg', 'checksum': '3bd02bd2f6d856ca73ffce7fdd6fb95a'}]}
+2017-06-14 16:24:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/0c3abf20c8a1ff40a4eee72e4c1d8213df3ff93b37e57-IqOawj> (referer: None)
+2017-06-14 16:24:41 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/0c3abf20c8a1ff40a4eee72e4c1d8213df3ff93b37e57-IqOawj> referred in <None>
+2017-06-14 16:24:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/a663584efe393e2069a4aee25fa108777b96dd922375c-WrbqDZ> (referer: None)
+2017-06-14 16:24:41 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/a663584efe393e2069a4aee25fa108777b96dd922375c-WrbqDZ> referred in <None>
+2017-06-14 16:24:42 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1180199965&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/0c3abf20c8a1ff40a4eee72e4c1d8213df3ff93b37e57-IqOawj'], 'images': [{'url': 'http://img.hb.aicdn.com/0c3abf20c8a1ff40a4eee72e4c1d8213df3ff93b37e57-IqOawj', 'path': 'full/3132905b5013f13745fcd1f74afa7c5dc1a5b508.jpg', 'checksum': '533d58b31b7333abd1208932c67842b0'}]}
+2017-06-14 16:24:42 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1180199965&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/a663584efe393e2069a4aee25fa108777b96dd922375c-WrbqDZ'], 'images': [{'url': 'http://img.hb.aicdn.com/a663584efe393e2069a4aee25fa108777b96dd922375c-WrbqDZ', 'path': 'full/8b5e9757c6426a42356685feea5933d84e174e8c.jpg', 'checksum': '69162c316b61885b297682fca15ea4b6'}]}
+2017-06-14 16:24:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://huaban.com/favorite/beauty/?j3vgljf1&max=1178430160&limit=20&wfl=1> (referer: http://huaban.com/favorite/beauty/?j3vgljf1&max=1180199965&limit=20&wfl=1)
+2017-06-14 16:24:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/e7866d8bccfaefa0eb31823c4f907804e22b72f570628-jYud4A> (referer: None)
+2017-06-14 16:24:44 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/e7866d8bccfaefa0eb31823c4f907804e22b72f570628-jYud4A> referred in <None>
+2017-06-14 16:24:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1180199965&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/e7866d8bccfaefa0eb31823c4f907804e22b72f570628-jYud4A'], 'images': [{'url': 'http://img.hb.aicdn.com/e7866d8bccfaefa0eb31823c4f907804e22b72f570628-jYud4A', 'path': 'full/9bba2517a562b256808b359e7e83910289ba2e37.jpg', 'checksum': 'ef6ed2b4b2389b835b487ade3458f777'}]}
+2017-06-14 16:24:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/74e0853925eac75a096d0c016046012f9f451a3c3eeb6-A8GZbF> (referer: None)
+2017-06-14 16:24:46 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/74e0853925eac75a096d0c016046012f9f451a3c3eeb6-A8GZbF> referred in <None>
+2017-06-14 16:24:47 [scrapy.extensions.logstats] INFO: Crawled 117 pages (at 12 pages/min), scraped 107 items (at 9 items/min)
+2017-06-14 16:24:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1180199965&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/74e0853925eac75a096d0c016046012f9f451a3c3eeb6-A8GZbF'], 'images': [{'url': 'http://img.hb.aicdn.com/74e0853925eac75a096d0c016046012f9f451a3c3eeb6-A8GZbF', 'path': 'full/bcf1c311b8c29124e893660bbbcc887fb6a931f2.jpg', 'checksum': '7f09e76f7d24579336e28467e25624eb'}]}
+2017-06-14 16:24:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/a69983804cfe329ed1adfec9e28f5df5481b630357c07-WVmldv> (referer: None)
+2017-06-14 16:24:50 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/a69983804cfe329ed1adfec9e28f5df5481b630357c07-WVmldv> referred in <None>
+2017-06-14 16:24:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1180199965&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/a69983804cfe329ed1adfec9e28f5df5481b630357c07-WVmldv'], 'images': [{'url': 'http://img.hb.aicdn.com/a69983804cfe329ed1adfec9e28f5df5481b630357c07-WVmldv', 'path': 'full/457f15057a73b102925d05b4bc0233899d096035.jpg', 'checksum': 'ef5205719a349f447d36853faa76dfad'}]}
+2017-06-14 16:24:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/8f59d2a9ca59a32f7af7438a5f22d1b743c1947a504fc-GC0r6Q> (referer: None)
+2017-06-14 16:24:52 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/8f59d2a9ca59a32f7af7438a5f22d1b743c1947a504fc-GC0r6Q> referred in <None>
+2017-06-14 16:24:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/a0c7712ef5a54fff20e300de5f0dacda1e2d4f9eb680-L5fY0o> (referer: None)
+2017-06-14 16:24:52 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/a0c7712ef5a54fff20e300de5f0dacda1e2d4f9eb680-L5fY0o> referred in <None>
+2017-06-14 16:24:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1180199965&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/8f59d2a9ca59a32f7af7438a5f22d1b743c1947a504fc-GC0r6Q'], 'images': [{'url': 'http://img.hb.aicdn.com/8f59d2a9ca59a32f7af7438a5f22d1b743c1947a504fc-GC0r6Q', 'path': 'full/b82dfc1046b6cc96d4ed2b8e33e481b49c80b7fd.jpg', 'checksum': 'a861010ba4b18dfe68e046752b342d6a'}]}
+2017-06-14 16:24:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1180199965&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/a0c7712ef5a54fff20e300de5f0dacda1e2d4f9eb680-L5fY0o'], 'images': [{'url': 'http://img.hb.aicdn.com/a0c7712ef5a54fff20e300de5f0dacda1e2d4f9eb680-L5fY0o', 'path': 'full/a3d01033d627e9d3c5f150a1514619a10b717d1e.jpg', 'checksum': '38788d17080237f78599c00134834adf'}]}
+2017-06-14 16:24:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/d09ed3fa2b49059e56332e6338e8a423ffcd6141e675d-fiAPHw> (referer: None)
+2017-06-14 16:24:57 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/d09ed3fa2b49059e56332e6338e8a423ffcd6141e675d-fiAPHw> referred in <None>
+2017-06-14 16:24:57 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1180199965&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/d09ed3fa2b49059e56332e6338e8a423ffcd6141e675d-fiAPHw'], 'images': [{'url': 'http://img.hb.aicdn.com/d09ed3fa2b49059e56332e6338e8a423ffcd6141e675d-fiAPHw', 'path': 'full/c844de1a9a2eb34b09e630e938e7fc15fa32fe29.jpg', 'checksum': '5171ab8462fa228b65010937048b34ad'}]}
+2017-06-14 16:25:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/69c41ce640c192da0af772f81425ba9de2b41bde9b250-bjfEbB> (referer: None)
+2017-06-14 16:25:00 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/69c41ce640c192da0af772f81425ba9de2b41bde9b250-bjfEbB> referred in <None>
+2017-06-14 16:25:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1180199965&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/69c41ce640c192da0af772f81425ba9de2b41bde9b250-bjfEbB'], 'images': [{'url': 'http://img.hb.aicdn.com/69c41ce640c192da0af772f81425ba9de2b41bde9b250-bjfEbB', 'path': 'full/875e4557ed13811e7ea4ae451d739e4c2ae607de.jpg', 'checksum': '73807cf3921cc9ed62184aed4d2afbe2'}]}
+2017-06-14 16:25:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/e069b287b1f5ab3e616dc9480998f4518b87c331d252-FiJlEY> (referer: None)
+2017-06-14 16:25:02 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/e069b287b1f5ab3e616dc9480998f4518b87c331d252-FiJlEY> referred in <None>
+2017-06-14 16:25:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1178430160&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/e069b287b1f5ab3e616dc9480998f4518b87c331d252-FiJlEY'], 'images': [{'url': 'http://img.hb.aicdn.com/e069b287b1f5ab3e616dc9480998f4518b87c331d252-FiJlEY', 'path': 'full/83772153a143c44d2aa4449d57e4e74f0a23c436.jpg', 'checksum': 'ab0f6ad3b4fa7f08068282c4784f71aa'}]}
+2017-06-14 16:25:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/55faf56821a4b4b10cc8806cfbfcf8ef7aed8bff2bd0e-UhLtLb> (referer: None)
+2017-06-14 16:25:04 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/55faf56821a4b4b10cc8806cfbfcf8ef7aed8bff2bd0e-UhLtLb> referred in <None>
+2017-06-14 16:25:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1178430160&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/55faf56821a4b4b10cc8806cfbfcf8ef7aed8bff2bd0e-UhLtLb'], 'images': [{'url': 'http://img.hb.aicdn.com/55faf56821a4b4b10cc8806cfbfcf8ef7aed8bff2bd0e-UhLtLb', 'path': 'full/024a51585496d3b7115a61026c396504af980579.jpg', 'checksum': '2bd0d5e9f12e508dece7b3af4a65992c'}]}
+2017-06-14 16:25:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/5dff81717e0975ed92d0aebdcf433cde1533e0362b0f3-D42UnV> (referer: None)
+2017-06-14 16:25:04 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/5dff81717e0975ed92d0aebdcf433cde1533e0362b0f3-D42UnV> referred in <None>
+2017-06-14 16:25:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1178430160&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/5dff81717e0975ed92d0aebdcf433cde1533e0362b0f3-D42UnV'], 'images': [{'url': 'http://img.hb.aicdn.com/5dff81717e0975ed92d0aebdcf433cde1533e0362b0f3-D42UnV', 'path': 'full/c3c58c0e1f39df7f140712671cd775e94cda3697.jpg', 'checksum': '0cbaf760b7b43f912a0980b84ac95ad2'}]}
+2017-06-14 16:25:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/ba8829c3b0e3d2e205560b73969a5ed6f4779a671ec09-RllVAu> (referer: None)
+2017-06-14 16:25:05 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/ba8829c3b0e3d2e205560b73969a5ed6f4779a671ec09-RllVAu> referred in <None>
+2017-06-14 16:25:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1178430160&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/ba8829c3b0e3d2e205560b73969a5ed6f4779a671ec09-RllVAu'], 'images': [{'url': 'http://img.hb.aicdn.com/ba8829c3b0e3d2e205560b73969a5ed6f4779a671ec09-RllVAu', 'path': 'full/20569b47cf8557dedb75f1f6e95cae3f7b4eb286.jpg', 'checksum': '5cb77f0417ad6c80b9d7c642f58e426c'}]}
+2017-06-14 16:25:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/c9195a319e95f61903c1de5198fd1da34423231e4f831-1UVy2F> (referer: None)
+2017-06-14 16:25:06 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/c9195a319e95f61903c1de5198fd1da34423231e4f831-1UVy2F> referred in <None>
+2017-06-14 16:25:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1178430160&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/c9195a319e95f61903c1de5198fd1da34423231e4f831-1UVy2F'], 'images': [{'url': 'http://img.hb.aicdn.com/c9195a319e95f61903c1de5198fd1da34423231e4f831-1UVy2F', 'path': 'full/d318ed38bbc1e4853582120b212482f504aefd71.jpg', 'checksum': 'd2ae56565b8271b5cc30c51184436021'}]}
+2017-06-14 16:25:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/6b746537d26ab367718c17a07224b2e03c3290c548b380-jY3ezj> (referer: None)
+2017-06-14 16:25:24 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/6b746537d26ab367718c17a07224b2e03c3290c548b380-jY3ezj> referred in <None>
+2017-06-14 16:25:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1180199965&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/6b746537d26ab367718c17a07224b2e03c3290c548b380-jY3ezj'], 'images': [{'url': 'http://img.hb.aicdn.com/6b746537d26ab367718c17a07224b2e03c3290c548b380-jY3ezj', 'path': 'full/0ffc5d3c8ba503b096e605f8517e832fea29faf7.jpg', 'checksum': '20cc97e988e8ccd1f908ca93471b601a'}]}
+2017-06-14 16:25:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/3d943a0bba4c607b92c3664284826259ea62d54994e75-OylIg3> (referer: None)
+2017-06-14 16:25:28 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/3d943a0bba4c607b92c3664284826259ea62d54994e75-OylIg3> referred in <None>
+2017-06-14 16:25:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1178430160&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/3d943a0bba4c607b92c3664284826259ea62d54994e75-OylIg3'], 'images': [{'url': 'http://img.hb.aicdn.com/3d943a0bba4c607b92c3664284826259ea62d54994e75-OylIg3', 'path': 'full/1f4ee28828767150d428f4afb447241778a54e05.jpg', 'checksum': 'd28bcde2b68e200d44ef0d4c9983f1d9'}]}
+2017-06-14 16:25:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/ec661464cf6dea07cca280567721d3c6adaa10b4283d3-z6UwwM> (referer: None)
+2017-06-14 16:25:29 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/ec661464cf6dea07cca280567721d3c6adaa10b4283d3-z6UwwM> referred in <None>
+2017-06-14 16:25:29 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1178430160&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/ec661464cf6dea07cca280567721d3c6adaa10b4283d3-z6UwwM'], 'images': [{'url': 'http://img.hb.aicdn.com/ec661464cf6dea07cca280567721d3c6adaa10b4283d3-z6UwwM', 'path': 'full/d9812ca4ac714c9043bc62076bb347f9c0a0856c.jpg', 'checksum': 'ac4242706b6c7f09fde0441ee9237d14'}]}
+2017-06-14 16:25:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/fd8843f722e09c47fd214ab53c57dd84a3d9027e24da3-8vknVX> (referer: None)
+2017-06-14 16:25:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/fd8843f722e09c47fd214ab53c57dd84a3d9027e24da3-8vknVX> referred in <None>
+2017-06-14 16:25:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1178430160&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/fd8843f722e09c47fd214ab53c57dd84a3d9027e24da3-8vknVX'], 'images': [{'url': 'http://img.hb.aicdn.com/fd8843f722e09c47fd214ab53c57dd84a3d9027e24da3-8vknVX', 'path': 'full/5eccf76f806bbb44ec9846a4db732590739b72e6.jpg', 'checksum': '39fea9afd030d772b4a12cc793996329'}]}
+2017-06-14 16:25:47 [scrapy.extensions.logstats] INFO: Crawled 131 pages (at 14 pages/min), scraped 122 items (at 15 items/min)
+2017-06-14 16:26:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/903040e1ac92ea49b4738d51760fb4a580a790e578679b-ASs4JE> (referer: None)
+2017-06-14 16:26:11 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/903040e1ac92ea49b4738d51760fb4a580a790e578679b-ASs4JE> referred in <None>
+2017-06-14 16:26:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1178430160&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/903040e1ac92ea49b4738d51760fb4a580a790e578679b-ASs4JE'], 'images': [{'url': 'http://img.hb.aicdn.com/903040e1ac92ea49b4738d51760fb4a580a790e578679b-ASs4JE', 'path': 'full/74fd5e9323d8a95256ba564393590202bfdfec26.jpg', 'checksum': 'cae88c4721b9fd390b71a5a3f9659168'}]}
+2017-06-14 16:26:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/50d1f2afeb508dd07f20143b100758d48e85453f7af27-qOwNy9> (referer: None)
+2017-06-14 16:26:14 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/50d1f2afeb508dd07f20143b100758d48e85453f7af27-qOwNy9> referred in <None>
+2017-06-14 16:26:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1178430160&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/50d1f2afeb508dd07f20143b100758d48e85453f7af27-qOwNy9'], 'images': [{'url': 'http://img.hb.aicdn.com/50d1f2afeb508dd07f20143b100758d48e85453f7af27-qOwNy9', 'path': 'full/01bedad8d199af2ac80086c55dcfe33e520c531e.jpg', 'checksum': '343002d10b396582cea85744c7a906f8'}]}
+2017-06-14 16:26:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/5eb32accf8822748ba5f2e5b15433374b7d08eac38de8-hkieme> (referer: None)
+2017-06-14 16:26:15 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/5eb32accf8822748ba5f2e5b15433374b7d08eac38de8-hkieme> referred in <None>
+2017-06-14 16:26:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1178430160&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/5eb32accf8822748ba5f2e5b15433374b7d08eac38de8-hkieme'], 'images': [{'url': 'http://img.hb.aicdn.com/5eb32accf8822748ba5f2e5b15433374b7d08eac38de8-hkieme', 'path': 'full/e8c0a5af866380c148a438547f2109302d6e1d3f.jpg', 'checksum': '1ba9a6c7e75cf3c8f139d5eed2d6d023'}]}
+2017-06-14 16:26:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/e8019f421ae95a1c6589743654273b7336475a561a62d-bC2a9W> (referer: None)
+2017-06-14 16:26:17 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/e8019f421ae95a1c6589743654273b7336475a561a62d-bC2a9W> referred in <None>
+2017-06-14 16:26:17 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1178430160&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/e8019f421ae95a1c6589743654273b7336475a561a62d-bC2a9W'], 'images': [{'url': 'http://img.hb.aicdn.com/e8019f421ae95a1c6589743654273b7336475a561a62d-bC2a9W', 'path': 'full/1a6a4f71a64f5db27bd79648730c14e82fcbb666.jpg', 'checksum': '76858d7772a5da817931cd94e6460534'}]}
+2017-06-14 16:26:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/8d61d838ac7b7de74ef85e985b624da71bba30df314f8-LPu11R> (referer: None)
+2017-06-14 16:26:17 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/8d61d838ac7b7de74ef85e985b624da71bba30df314f8-LPu11R> referred in <None>
+2017-06-14 16:26:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://huaban.com/favorite/beauty/?j3vgljf1&max=1176451567&limit=20&wfl=1> (referer: http://huaban.com/favorite/beauty/?j3vgljf1&max=1178430160&limit=20&wfl=1)
+2017-06-14 16:26:17 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1178430160&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/8d61d838ac7b7de74ef85e985b624da71bba30df314f8-LPu11R'], 'images': [{'url': 'http://img.hb.aicdn.com/8d61d838ac7b7de74ef85e985b624da71bba30df314f8-LPu11R', 'path': 'full/919998f770fb0b0bf293fa7ccc500dc631648564.jpg', 'checksum': '5623ada234cf6c63a0b0eeee210cc53b'}]}
+2017-06-14 16:26:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/8dc0c10e0857c8892aa28d7d249f89ef7bcca185a7c63-hke6vW> (referer: None)
+2017-06-14 16:26:21 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/8dc0c10e0857c8892aa28d7d249f89ef7bcca185a7c63-hke6vW> referred in <None>
+2017-06-14 16:26:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1178430160&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/8dc0c10e0857c8892aa28d7d249f89ef7bcca185a7c63-hke6vW'], 'images': [{'url': 'http://img.hb.aicdn.com/8dc0c10e0857c8892aa28d7d249f89ef7bcca185a7c63-hke6vW', 'path': 'full/77717fcc8c150662cc89930ed755fe0851e6eeb7.jpg', 'checksum': '95370ad57d23c15bdfe0bb1f669de057'}]}
+2017-06-14 16:26:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/fa5759888149b2cc64595d8454219983b37db4626f34c-rPmXAi> (referer: None)
+2017-06-14 16:26:22 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/fa5759888149b2cc64595d8454219983b37db4626f34c-rPmXAi> referred in <None>
+2017-06-14 16:26:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1178430160&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/fa5759888149b2cc64595d8454219983b37db4626f34c-rPmXAi'], 'images': [{'url': 'http://img.hb.aicdn.com/fa5759888149b2cc64595d8454219983b37db4626f34c-rPmXAi', 'path': 'full/16e9c5660dcd56f70b383d4a973485e48ae7e8e7.jpg', 'checksum': '145bea538fc6130df438ff4451bbdc3e'}]}
+2017-06-14 16:26:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/d753fd97087c49f1768a170f0cb5d86a1ba11b7ebd33-yM0suB> (referer: None)
+2017-06-14 16:26:23 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/d753fd97087c49f1768a170f0cb5d86a1ba11b7ebd33-yM0suB> referred in <None>
+2017-06-14 16:26:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1178430160&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/d753fd97087c49f1768a170f0cb5d86a1ba11b7ebd33-yM0suB'], 'images': [{'url': 'http://img.hb.aicdn.com/d753fd97087c49f1768a170f0cb5d86a1ba11b7ebd33-yM0suB', 'path': 'full/03250921cc676a64536bd58d0842fb1e915fdca5.jpg', 'checksum': '78d34c1c234e3c07fb957362e820e216'}]}
+2017-06-14 16:26:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/31bdd55365f693979c543fa84f85e5b4882930c91020d-rSBzCl> (referer: None)
+2017-06-14 16:26:24 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/31bdd55365f693979c543fa84f85e5b4882930c91020d-rSBzCl> referred in <None>
+2017-06-14 16:26:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1178430160&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/31bdd55365f693979c543fa84f85e5b4882930c91020d-rSBzCl'], 'images': [{'url': 'http://img.hb.aicdn.com/31bdd55365f693979c543fa84f85e5b4882930c91020d-rSBzCl', 'path': 'full/099e4867d2e0871fd3f0c5181fc368eb510e37df.jpg', 'checksum': '2150985e0877c4c4579fc48985e48651'}]}
+2017-06-14 16:26:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/02b7134f04ff7c50f8c2ced30ef13c03eda8c4c8b9caa-Pi0Dwy> (referer: None)
+2017-06-14 16:26:26 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/02b7134f04ff7c50f8c2ced30ef13c03eda8c4c8b9caa-Pi0Dwy> referred in <None>
+2017-06-14 16:26:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1178430160&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/02b7134f04ff7c50f8c2ced30ef13c03eda8c4c8b9caa-Pi0Dwy'], 'images': [{'url': 'http://img.hb.aicdn.com/02b7134f04ff7c50f8c2ced30ef13c03eda8c4c8b9caa-Pi0Dwy', 'path': 'full/9a1c720df3f5bb9cb2841baa68d6dbc75f2b35e4.jpg', 'checksum': '50fc06bbb9a7c5d70045a245af17f003'}]}
+2017-06-14 16:26:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/b5f4ff6b5a024d2b28ac4aa713c80057efebf09913492f-RLPehl> (referer: None)
+2017-06-14 16:26:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/b5f4ff6b5a024d2b28ac4aa713c80057efebf09913492f-RLPehl> referred in <None>
+2017-06-14 16:26:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1178430160&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/b5f4ff6b5a024d2b28ac4aa713c80057efebf09913492f-RLPehl'], 'images': [{'url': 'http://img.hb.aicdn.com/b5f4ff6b5a024d2b28ac4aa713c80057efebf09913492f-RLPehl', 'path': 'full/4b7d851694a81192b8224dad69172af8352ff11e.jpg', 'checksum': '147e8b86d1a6814b8d060c09445f4e05'}]}
+2017-06-14 16:26:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/f7d0249583da3ab41aa4084bc4002a7d82b192493e81c-c6C3w3> (referer: None)
+2017-06-14 16:26:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/f7d0249583da3ab41aa4084bc4002a7d82b192493e81c-c6C3w3> referred in <None>
+2017-06-14 16:26:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/401b9fe87d6776985e319f89921149dae4329d2e2883f-wqYCD1> (referer: None)
+2017-06-14 16:26:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/401b9fe87d6776985e319f89921149dae4329d2e2883f-wqYCD1> referred in <None>
+2017-06-14 16:26:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1176451567&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/f7d0249583da3ab41aa4084bc4002a7d82b192493e81c-c6C3w3'], 'images': [{'url': 'http://img.hb.aicdn.com/f7d0249583da3ab41aa4084bc4002a7d82b192493e81c-c6C3w3', 'path': 'full/dbabd50d82033ee6cef61087f73b052de30c37de.jpg', 'checksum': 'eedf7ef8d5cf83de191dfc40066ae2a1'}]}
+2017-06-14 16:26:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1176451567&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/401b9fe87d6776985e319f89921149dae4329d2e2883f-wqYCD1'], 'images': [{'url': 'http://img.hb.aicdn.com/401b9fe87d6776985e319f89921149dae4329d2e2883f-wqYCD1', 'path': 'full/81857a5fc737a83af290dc47bdaec610f9d03da2.jpg', 'checksum': '63158339158dbfc11fdbec942839d701'}]}
+2017-06-14 16:26:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/62ab1f8526f4aaa9d13c5d74b17620656c63ec942b4ff-ppyJ8c> (referer: None)
+2017-06-14 16:26:36 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/62ab1f8526f4aaa9d13c5d74b17620656c63ec942b4ff-ppyJ8c> referred in <None>
+2017-06-14 16:26:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1176451567&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/62ab1f8526f4aaa9d13c5d74b17620656c63ec942b4ff-ppyJ8c'], 'images': [{'url': 'http://img.hb.aicdn.com/62ab1f8526f4aaa9d13c5d74b17620656c63ec942b4ff-ppyJ8c', 'path': 'full/458b8693293ca9ee2201a58de4e7fa70fa03f169.jpg', 'checksum': '96f60f884a94c29f3a13ccec26267d98'}]}
+2017-06-14 16:26:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/847d8c09d2ef25c426a4db67a07b73d00b9c00e7152b5-qS9081> (referer: None)
+2017-06-14 16:26:36 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/847d8c09d2ef25c426a4db67a07b73d00b9c00e7152b5-qS9081> referred in <None>
+2017-06-14 16:26:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1176451567&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/847d8c09d2ef25c426a4db67a07b73d00b9c00e7152b5-qS9081'], 'images': [{'url': 'http://img.hb.aicdn.com/847d8c09d2ef25c426a4db67a07b73d00b9c00e7152b5-qS9081', 'path': 'full/c36c4942f183bde8b2163513e2598fa76e296c29.jpg', 'checksum': '72ad29e52674af69f48abdf7121e237b'}]}
+2017-06-14 16:26:47 [scrapy.extensions.logstats] INFO: Crawled 147 pages (at 16 pages/min), scraped 137 items (at 15 items/min)
+2017-06-14 16:26:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/50cd684e1a92b547a16772c7f074d351af859518340e07-NAEuZq> (referer: None)
+2017-06-14 16:26:52 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/50cd684e1a92b547a16772c7f074d351af859518340e07-NAEuZq> referred in <None>
+2017-06-14 16:26:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/79c85c8f3e3eddcffce82b0bd934ed2a0a34564e9f81-JDdl7l> (referer: None)
+2017-06-14 16:26:52 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/79c85c8f3e3eddcffce82b0bd934ed2a0a34564e9f81-JDdl7l> referred in <None>
+2017-06-14 16:26:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1176451567&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/50cd684e1a92b547a16772c7f074d351af859518340e07-NAEuZq'], 'images': [{'url': 'http://img.hb.aicdn.com/50cd684e1a92b547a16772c7f074d351af859518340e07-NAEuZq', 'path': 'full/ca14797c725dfdd8c57655b60d75137e505e5498.jpg', 'checksum': '513c86b847e6702ac6eebb1ef8cf5f6c'}]}
+2017-06-14 16:26:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1176451567&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/79c85c8f3e3eddcffce82b0bd934ed2a0a34564e9f81-JDdl7l'], 'images': [{'url': 'http://img.hb.aicdn.com/79c85c8f3e3eddcffce82b0bd934ed2a0a34564e9f81-JDdl7l', 'path': 'full/2ff02c15d90d373508e2e34de967e99a8a98b1a5.jpg', 'checksum': '6516ba01ed554a941d3768f5b894e371'}]}
+2017-06-14 16:26:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/ccab16265152c1e35faf9dd500212a1e5e474a428ae60-EcB41g> (referer: None)
+2017-06-14 16:26:53 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/ccab16265152c1e35faf9dd500212a1e5e474a428ae60-EcB41g> referred in <None>
+2017-06-14 16:26:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1176451567&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/ccab16265152c1e35faf9dd500212a1e5e474a428ae60-EcB41g'], 'images': [{'url': 'http://img.hb.aicdn.com/ccab16265152c1e35faf9dd500212a1e5e474a428ae60-EcB41g', 'path': 'full/98845a110e11e1a74df2cdc6557c8f8eb8c9a654.jpg', 'checksum': 'cd9080d77ee844c18104a517ce2a7385'}]}
+2017-06-14 16:26:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/02416afee0bf0fbb941f95c732d8a35e80e03c771916c-JEfh24> (referer: None)
+2017-06-14 16:26:54 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/02416afee0bf0fbb941f95c732d8a35e80e03c771916c-JEfh24> referred in <None>
+2017-06-14 16:26:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1176451567&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/02416afee0bf0fbb941f95c732d8a35e80e03c771916c-JEfh24'], 'images': [{'url': 'http://img.hb.aicdn.com/02416afee0bf0fbb941f95c732d8a35e80e03c771916c-JEfh24', 'path': 'full/deeac0d6effd5d72b2c81c15941118721ca31146.jpg', 'checksum': '4bd1cc13dcad4a51c7acef77d36330a3'}]}
+2017-06-14 16:26:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/5c1c7fa7251663433d0d709031b0ed1211ad3530f6313-k9uuJU> (referer: None)
+2017-06-14 16:26:58 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/5c1c7fa7251663433d0d709031b0ed1211ad3530f6313-k9uuJU> referred in <None>
+2017-06-14 16:26:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1176451567&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/5c1c7fa7251663433d0d709031b0ed1211ad3530f6313-k9uuJU'], 'images': [{'url': 'http://img.hb.aicdn.com/5c1c7fa7251663433d0d709031b0ed1211ad3530f6313-k9uuJU', 'path': 'full/bad0c74a6570e213de2aaa3713cb68cd285a0efe.jpg', 'checksum': 'bfd769f35a3cd6c2e9b8a4700f4ba0e0'}]}
+2017-06-14 16:26:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/50e2e70686e469db5f65c6741b328adf9e6844755c884-ElTgJp> (referer: None)
+2017-06-14 16:26:59 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/50e2e70686e469db5f65c6741b328adf9e6844755c884-ElTgJp> referred in <None>
+2017-06-14 16:26:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1176451567&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/50e2e70686e469db5f65c6741b328adf9e6844755c884-ElTgJp'], 'images': [{'url': 'http://img.hb.aicdn.com/50e2e70686e469db5f65c6741b328adf9e6844755c884-ElTgJp', 'path': 'full/03ee94c069692b0c52c16efe101e3b6641109524.jpg', 'checksum': '20ef1ab875a0c5d52ce0ddab19b0f807'}]}
+2017-06-14 16:27:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/192f107269235e34fa8f3114acfe2b0ec6a7e2f9244ba-dSuNeO> (referer: None)
+2017-06-14 16:27:02 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/192f107269235e34fa8f3114acfe2b0ec6a7e2f9244ba-dSuNeO> referred in <None>
+2017-06-14 16:27:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1176451567&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/192f107269235e34fa8f3114acfe2b0ec6a7e2f9244ba-dSuNeO'], 'images': [{'url': 'http://img.hb.aicdn.com/192f107269235e34fa8f3114acfe2b0ec6a7e2f9244ba-dSuNeO', 'path': 'full/e8f45f0a2f65a7c850352c901acfe2327f219e4f.jpg', 'checksum': '3ef85b634ffb5691105bcfd2d604b5ec'}]}
+2017-06-14 16:27:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/df35a17ca887792dc8cf10b4d8151712f5c7384b7de4-8ddGqE> (referer: None)
+2017-06-14 16:27:03 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/df35a17ca887792dc8cf10b4d8151712f5c7384b7de4-8ddGqE> referred in <None>
+2017-06-14 16:27:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1176451567&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/df35a17ca887792dc8cf10b4d8151712f5c7384b7de4-8ddGqE'], 'images': [{'url': 'http://img.hb.aicdn.com/df35a17ca887792dc8cf10b4d8151712f5c7384b7de4-8ddGqE', 'path': 'full/9dfa1f688dfd8e70ae2f7dbab9993a6b602d6659.jpg', 'checksum': '10e9f0a1c42c2f8c3bd9d9f5cbbac0d9'}]}
+2017-06-14 16:27:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/4623f8abc2f8ed34e6ed3c035272238f54f888ac56bff-DM3tcK> (referer: None)
+2017-06-14 16:27:03 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/4623f8abc2f8ed34e6ed3c035272238f54f888ac56bff-DM3tcK> referred in <None>
+2017-06-14 16:27:03 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2017-06-14 16:27:03 [PIL.PngImagePlugin] DEBUG: STREAM b'iCCP' 41 281
+2017-06-14 16:27:03 [PIL.PngImagePlugin] DEBUG: iCCP profile name b'ICC Profile'
+2017-06-14 16:27:03 [PIL.PngImagePlugin] DEBUG: Compression method 0
+2017-06-14 16:27:03 [PIL.PngImagePlugin] DEBUG: STREAM b'iTXt' 334 413
+2017-06-14 16:27:03 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 759 16384
+2017-06-14 16:27:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://huaban.com/favorite/beauty/?j3vgljf1&max=1172884199&limit=20&wfl=1> (referer: http://huaban.com/favorite/beauty/?j3vgljf1&max=1176451567&limit=20&wfl=1)
+2017-06-14 16:27:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1176451567&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/4623f8abc2f8ed34e6ed3c035272238f54f888ac56bff-DM3tcK'], 'images': [{'url': 'http://img.hb.aicdn.com/4623f8abc2f8ed34e6ed3c035272238f54f888ac56bff-DM3tcK', 'path': 'full/f420412fc8a7a1e39e3ff4a41f10ae80b9be8bb1.jpg', 'checksum': 'c905640aea3d441c7eeed2e15100ff69'}]}
+2017-06-14 16:27:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/5fcea8f3d261f46a04fd7d488a0908606a53c71f41ad7-6tPBA0> (referer: None)
+2017-06-14 16:27:05 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/5fcea8f3d261f46a04fd7d488a0908606a53c71f41ad7-6tPBA0> referred in <None>
+2017-06-14 16:27:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1176451567&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/5fcea8f3d261f46a04fd7d488a0908606a53c71f41ad7-6tPBA0'], 'images': [{'url': 'http://img.hb.aicdn.com/5fcea8f3d261f46a04fd7d488a0908606a53c71f41ad7-6tPBA0', 'path': 'full/1728e872bf8a0c456d11515c6b0a694d2f628b92.jpg', 'checksum': '8c69f09f12dd5b2de012c5b5c1f22cbb'}]}
+2017-06-14 16:27:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/5ebdfdebd78ea18b9fba5bdc65909ed1f36cd4f37a6db-xEl8zz> (referer: None)
+2017-06-14 16:27:07 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/5ebdfdebd78ea18b9fba5bdc65909ed1f36cd4f37a6db-xEl8zz> referred in <None>
+2017-06-14 16:27:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/e79e0f0c12b88750566767620ee803c42404f79024338-DIei3f> (referer: None)
+2017-06-14 16:27:07 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/e79e0f0c12b88750566767620ee803c42404f79024338-DIei3f> referred in <None>
+2017-06-14 16:27:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1176451567&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/5ebdfdebd78ea18b9fba5bdc65909ed1f36cd4f37a6db-xEl8zz'], 'images': [{'url': 'http://img.hb.aicdn.com/5ebdfdebd78ea18b9fba5bdc65909ed1f36cd4f37a6db-xEl8zz', 'path': 'full/897c24b8c1a6359281ee5b8f3320160a2b1c5b0d.jpg', 'checksum': '20686de9c3477bcb71f1c30fc19cfb28'}]}
+2017-06-14 16:27:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1176451567&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/e79e0f0c12b88750566767620ee803c42404f79024338-DIei3f'], 'images': [{'url': 'http://img.hb.aicdn.com/e79e0f0c12b88750566767620ee803c42404f79024338-DIei3f', 'path': 'full/ee42bb498df3fc548af9beb69950da7823ed4592.jpg', 'checksum': 'e03e17ba4c9aa1d0616cfb44aaf8d654'}]}
+2017-06-14 16:27:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/1c364fda20e6f1f02608c675ec8694481a767774336445-17Wkzx> (referer: None)
+2017-06-14 16:27:21 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/1c364fda20e6f1f02608c675ec8694481a767774336445-17Wkzx> referred in <None>
+2017-06-14 16:27:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/4e08c618cadc3f1757a54534ff8b8a3798fa6aede6ec-aMtyyW> (referer: None)
+2017-06-14 16:27:21 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/4e08c618cadc3f1757a54534ff8b8a3798fa6aede6ec-aMtyyW> referred in <None>
+2017-06-14 16:27:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1176451567&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/1c364fda20e6f1f02608c675ec8694481a767774336445-17Wkzx'], 'images': [{'url': 'http://img.hb.aicdn.com/1c364fda20e6f1f02608c675ec8694481a767774336445-17Wkzx', 'path': 'full/789fe0e404cdc51a865c0b49e8565fd6ec95e5ff.jpg', 'checksum': '768ecf014484c9199eb1ebc1b3cfd811'}]}
+2017-06-14 16:27:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1176451567&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/4e08c618cadc3f1757a54534ff8b8a3798fa6aede6ec-aMtyyW'], 'images': [{'url': 'http://img.hb.aicdn.com/4e08c618cadc3f1757a54534ff8b8a3798fa6aede6ec-aMtyyW', 'path': 'full/188f38aeff271ff8eb4da5db5484f7eff15f4fb6.jpg', 'checksum': '807f85c269010e016e0510a67c011825'}]}
+2017-06-14 16:27:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/65c5c823f8f30b54cc37374f06b078e161cc0fb5182ebf-DRsINT> (referer: None)
+2017-06-14 16:27:29 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/65c5c823f8f30b54cc37374f06b078e161cc0fb5182ebf-DRsINT> referred in <None>
+2017-06-14 16:27:30 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1176451567&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/65c5c823f8f30b54cc37374f06b078e161cc0fb5182ebf-DRsINT'], 'images': [{'url': 'http://img.hb.aicdn.com/65c5c823f8f30b54cc37374f06b078e161cc0fb5182ebf-DRsINT', 'path': 'full/91f84914d116031650afa1f7ecb89415029fb2e9.jpg', 'checksum': '622220aefb00b5573302696d7c8bcf34'}]}
+2017-06-14 16:27:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/935324f7295669b783bb3f97b6c5156e30834a0e70a8b-HXfpCx> (referer: None)
+2017-06-14 16:27:32 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/935324f7295669b783bb3f97b6c5156e30834a0e70a8b-HXfpCx> referred in <None>
+2017-06-14 16:27:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/34b41ab0da87b6fb7005f14c7773401dcda1ff35ffa8-05Mtoy> (referer: None)
+2017-06-14 16:27:32 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/34b41ab0da87b6fb7005f14c7773401dcda1ff35ffa8-05Mtoy> referred in <None>
+2017-06-14 16:27:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1176451567&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/935324f7295669b783bb3f97b6c5156e30834a0e70a8b-HXfpCx'], 'images': [{'url': 'http://img.hb.aicdn.com/935324f7295669b783bb3f97b6c5156e30834a0e70a8b-HXfpCx', 'path': 'full/3dba7028dec530efb847245f2a280c491984f957.jpg', 'checksum': '0ae89f0e97db76d0b1b5c90ae314ab26'}]}
+2017-06-14 16:27:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1172884199&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/34b41ab0da87b6fb7005f14c7773401dcda1ff35ffa8-05Mtoy'], 'images': [{'url': 'http://img.hb.aicdn.com/34b41ab0da87b6fb7005f14c7773401dcda1ff35ffa8-05Mtoy', 'path': 'full/396fea8f38ea58948d36c0c02af9544327f86f09.jpg', 'checksum': '03c06183db7435392a3d7c37c50ce0be'}]}
+2017-06-14 16:27:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/ef9f2c3ce53b7c4ce9a169b3203fc2b4f28b7ca672307-xttGac> (referer: None)
+2017-06-14 16:27:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/ef9f2c3ce53b7c4ce9a169b3203fc2b4f28b7ca672307-xttGac> referred in <None>
+2017-06-14 16:27:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1172884199&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/ef9f2c3ce53b7c4ce9a169b3203fc2b4f28b7ca672307-xttGac'], 'images': [{'url': 'http://img.hb.aicdn.com/ef9f2c3ce53b7c4ce9a169b3203fc2b4f28b7ca672307-xttGac', 'path': 'full/6e5f4e0a83577de830fd8c7b769c32e012f16d60.jpg', 'checksum': 'd404a64a99699f1066f94ed0b098bdf0'}]}
+2017-06-14 16:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/c0488af73d1870ebd41a5a66c1cd1afa9188fdca62e79-jFVWVz> (referer: None)
+2017-06-14 16:27:36 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/c0488af73d1870ebd41a5a66c1cd1afa9188fdca62e79-jFVWVz> referred in <None>
+2017-06-14 16:27:37 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://img.hb.aicdn.com/1088a3f8745e0756958bdbf776b67105436f9011ccea2-1dW4KS> (failed 1 times): User timeout caused connection failure: Getting http://img.hb.aicdn.com/1088a3f8745e0756958bdbf776b67105436f9011ccea2-1dW4KS took longer than 180.0 seconds..
+2017-06-14 16:27:37 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://img.hb.aicdn.com/e64431be3cd49ec0fa007e4513d1a383956c0ca23c29f-6mhTVb> (failed 1 times): User timeout caused connection failure: Getting http://img.hb.aicdn.com/e64431be3cd49ec0fa007e4513d1a383956c0ca23c29f-6mhTVb took longer than 180.0 seconds..
+2017-06-14 16:27:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/3793a3f71cafd58ae74d02d46ea4b19563b5edb6a304-SX1vfv> (referer: None)
+2017-06-14 16:27:37 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/3793a3f71cafd58ae74d02d46ea4b19563b5edb6a304-SX1vfv> referred in <None>
+2017-06-14 16:27:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1172884199&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/c0488af73d1870ebd41a5a66c1cd1afa9188fdca62e79-jFVWVz'], 'images': [{'url': 'http://img.hb.aicdn.com/c0488af73d1870ebd41a5a66c1cd1afa9188fdca62e79-jFVWVz', 'path': 'full/2f375ec47edc602cbb19dc1c8853c62a1b18abe2.jpg', 'checksum': '8c5a8720d1cd70e97fb50ed09eb39870'}]}
+2017-06-14 16:27:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1172884199&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/3793a3f71cafd58ae74d02d46ea4b19563b5edb6a304-SX1vfv'], 'images': [{'url': 'http://img.hb.aicdn.com/3793a3f71cafd58ae74d02d46ea4b19563b5edb6a304-SX1vfv', 'path': 'full/089c5aab5e73b4a44206e6322bd19bf9222f000f.jpg', 'checksum': '6beefec098d3ca4157ea7c2958ce0220'}]}
+2017-06-14 16:27:38 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://img.hb.aicdn.com/40e59dd92d337885eb53fd3ff3c217a634863db53da179-c8wGFL> (failed 1 times): User timeout caused connection failure: Getting http://img.hb.aicdn.com/40e59dd92d337885eb53fd3ff3c217a634863db53da179-c8wGFL took longer than 180.0 seconds..
+2017-06-14 16:27:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/96fd8ce7f3151eeab878f9515f6297433a6c9fe9160bf-6wsonX> (referer: None)
+2017-06-14 16:27:43 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/96fd8ce7f3151eeab878f9515f6297433a6c9fe9160bf-6wsonX> referred in <None>
+2017-06-14 16:27:43 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1172884199&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/96fd8ce7f3151eeab878f9515f6297433a6c9fe9160bf-6wsonX'], 'images': [{'url': 'http://img.hb.aicdn.com/96fd8ce7f3151eeab878f9515f6297433a6c9fe9160bf-6wsonX', 'path': 'full/3fea7ab79b906f31d38d4c9906a3851d812e4ee4.jpg', 'checksum': '4bb400fcf07d804c1ebd67cbb107a89e'}]}
+2017-06-14 16:27:44 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://img.hb.aicdn.com/1b28785a1f134f7b8cfe971ba2bd0dd56145432be1e27-vBAKPS> (failed 1 times): User timeout caused connection failure: Getting http://img.hb.aicdn.com/1b28785a1f134f7b8cfe971ba2bd0dd56145432be1e27-vBAKPS took longer than 180.0 seconds..
+2017-06-14 16:27:46 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://img.hb.aicdn.com/b7896dd392b5546c2956fc63c1e9c3f28a3d58b8b54ff-S8FFjS> (failed 1 times): User timeout caused connection failure: Getting http://img.hb.aicdn.com/b7896dd392b5546c2956fc63c1e9c3f28a3d58b8b54ff-S8FFjS took longer than 180.0 seconds..
+2017-06-14 16:27:47 [scrapy.extensions.logstats] INFO: Crawled 169 pages (at 22 pages/min), scraped 158 items (at 21 items/min)
+2017-06-14 16:27:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/e709eacb97674c749d5d4f61029b86884c218d29200d9-IZPTsV> (referer: None)
+2017-06-14 16:27:52 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/e709eacb97674c749d5d4f61029b86884c218d29200d9-IZPTsV> referred in <None>
+2017-06-14 16:27:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1172884199&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/e709eacb97674c749d5d4f61029b86884c218d29200d9-IZPTsV'], 'images': [{'url': 'http://img.hb.aicdn.com/e709eacb97674c749d5d4f61029b86884c218d29200d9-IZPTsV', 'path': 'full/e10e449b88834cb28fc47abe15b3a91fa1ef1b03.jpg', 'checksum': '7e25e22f20c3004c2691a67d6a8e7f1d'}]}
+2017-06-14 16:27:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/764379c52e06f698f8641a0c6224c35631d6aced269cc0-wtt0Ut> (referer: None)
+2017-06-14 16:27:55 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/764379c52e06f698f8641a0c6224c35631d6aced269cc0-wtt0Ut> referred in <None>
+2017-06-14 16:27:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1172884199&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/764379c52e06f698f8641a0c6224c35631d6aced269cc0-wtt0Ut'], 'images': [{'url': 'http://img.hb.aicdn.com/764379c52e06f698f8641a0c6224c35631d6aced269cc0-wtt0Ut', 'path': 'full/f357ad17f3d07032ef0222d270fdff4632db1bb7.jpg', 'checksum': 'e325733aa139c4537f0e66184b2ba067'}]}
+2017-06-14 16:27:57 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://img.hb.aicdn.com/c3e112a0af1631d59ba01f61e9f77f2f54da5c20fc2a5-9rsrnZ> (failed 1 times): User timeout caused connection failure: Getting http://img.hb.aicdn.com/c3e112a0af1631d59ba01f61e9f77f2f54da5c20fc2a5-9rsrnZ took longer than 180.0 seconds..
+2017-06-14 16:27:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/d52a79c2aa1487e8f327376327dd47684d7c41178f2dc-K38jUG> (referer: None)
+2017-06-14 16:27:59 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/d52a79c2aa1487e8f327376327dd47684d7c41178f2dc-K38jUG> referred in <None>
+2017-06-14 16:27:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1172884199&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/d52a79c2aa1487e8f327376327dd47684d7c41178f2dc-K38jUG'], 'images': [{'url': 'http://img.hb.aicdn.com/d52a79c2aa1487e8f327376327dd47684d7c41178f2dc-K38jUG', 'path': 'full/be2fb68befebc82d0c33f727c0721d4ed060a1b9.jpg', 'checksum': '5c7df825a41c9eb2bd3cb1fa5d44bc44'}]}
+2017-06-14 16:28:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/f72dbbe03c5f164b7ca6ba60fb702faad763f9fc44eec-bnE8Tw> (referer: None)
+2017-06-14 16:28:00 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/f72dbbe03c5f164b7ca6ba60fb702faad763f9fc44eec-bnE8Tw> referred in <None>
+2017-06-14 16:28:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1172884199&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/f72dbbe03c5f164b7ca6ba60fb702faad763f9fc44eec-bnE8Tw'], 'images': [{'url': 'http://img.hb.aicdn.com/f72dbbe03c5f164b7ca6ba60fb702faad763f9fc44eec-bnE8Tw', 'path': 'full/a7a61aaade52e7fdab6c384cf1a9120a344ef8fc.jpg', 'checksum': 'd35de9df8958bb9dde8603faa55f3409'}]}
+2017-06-14 16:28:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/5f66a6a2c9dadf4b6274ca440a32e30d27eb80df11af0-3CZLKl> (referer: None)
+2017-06-14 16:28:05 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/5f66a6a2c9dadf4b6274ca440a32e30d27eb80df11af0-3CZLKl> referred in <None>
+2017-06-14 16:28:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1172884199&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/5f66a6a2c9dadf4b6274ca440a32e30d27eb80df11af0-3CZLKl'], 'images': [{'url': 'http://img.hb.aicdn.com/5f66a6a2c9dadf4b6274ca440a32e30d27eb80df11af0-3CZLKl', 'path': 'full/d3adbc5f824b9b47d44230c8d62e005e4510d472.jpg', 'checksum': '7abf986391901f998e02d2401058780e'}]}
+2017-06-14 16:28:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/97a687d2e7f23993e29ba270b2b32a65682fc2be7a673-jj5cxa> (referer: None)
+2017-06-14 16:28:08 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/97a687d2e7f23993e29ba270b2b32a65682fc2be7a673-jj5cxa> referred in <None>
+2017-06-14 16:28:08 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1172884199&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/97a687d2e7f23993e29ba270b2b32a65682fc2be7a673-jj5cxa'], 'images': [{'url': 'http://img.hb.aicdn.com/97a687d2e7f23993e29ba270b2b32a65682fc2be7a673-jj5cxa', 'path': 'full/0e27720e06a5e92bb1ea1e6561c4d407644e7762.jpg', 'checksum': 'a6929820d612b2e15e27f5ee0535d7f6'}]}
+2017-06-14 16:28:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/63bfa47c247b70fce9ea098c8a35e1bf8fcf738b4db29-WfmR6C> (referer: None)
+2017-06-14 16:28:10 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/63bfa47c247b70fce9ea098c8a35e1bf8fcf738b4db29-WfmR6C> referred in <None>
+2017-06-14 16:28:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/1d678a7792344d471e99b9628d047bddb719dc472b6f8-aIES4Q> (referer: None)
+2017-06-14 16:28:10 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/1d678a7792344d471e99b9628d047bddb719dc472b6f8-aIES4Q> referred in <None>
+2017-06-14 16:28:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1172884199&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/63bfa47c247b70fce9ea098c8a35e1bf8fcf738b4db29-WfmR6C'], 'images': [{'url': 'http://img.hb.aicdn.com/63bfa47c247b70fce9ea098c8a35e1bf8fcf738b4db29-WfmR6C', 'path': 'full/20668a6e0f617b2090b4000a5127b0c1f096297f.jpg', 'checksum': '56c138a58ebe690f8dac687102145cab'}]}
+2017-06-14 16:28:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1172884199&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/1d678a7792344d471e99b9628d047bddb719dc472b6f8-aIES4Q'], 'images': [{'url': 'http://img.hb.aicdn.com/1d678a7792344d471e99b9628d047bddb719dc472b6f8-aIES4Q', 'path': 'full/031940e32f3b76519e31399952f02fb0a66d9596.jpg', 'checksum': '231a87ea9f567b52a1fb79845437a724'}]}
+2017-06-14 16:28:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/6211d8c110c60fe63240b5f48b602067ffc2c440827fb-dikxER> (referer: None)
+2017-06-14 16:28:13 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/6211d8c110c60fe63240b5f48b602067ffc2c440827fb-dikxER> referred in <None>
+2017-06-14 16:28:13 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1172884199&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/6211d8c110c60fe63240b5f48b602067ffc2c440827fb-dikxER'], 'images': [{'url': 'http://img.hb.aicdn.com/6211d8c110c60fe63240b5f48b602067ffc2c440827fb-dikxER', 'path': 'full/71682d4b80d93494f853a60a8f9084c74cd5c214.jpg', 'checksum': 'c1c30e960840b485e77213fc75fd2590'}]}
+2017-06-14 16:28:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/1088a3f8745e0756958bdbf776b67105436f9011ccea2-1dW4KS> (referer: None)
+2017-06-14 16:28:16 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/1088a3f8745e0756958bdbf776b67105436f9011ccea2-1dW4KS> referred in <None>
+2017-06-14 16:28:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1180199965&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/1088a3f8745e0756958bdbf776b67105436f9011ccea2-1dW4KS'], 'images': [{'url': 'http://img.hb.aicdn.com/1088a3f8745e0756958bdbf776b67105436f9011ccea2-1dW4KS', 'path': 'full/021b22f0bf52bf6190985cb6b2aca34ea760dd5e.jpg', 'checksum': 'a80a314eb208655ffc0b85a92b0f7d2b'}]}
+2017-06-14 16:28:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/e64431be3cd49ec0fa007e4513d1a383956c0ca23c29f-6mhTVb> (referer: None)
+2017-06-14 16:28:18 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/e64431be3cd49ec0fa007e4513d1a383956c0ca23c29f-6mhTVb> referred in <None>
+2017-06-14 16:28:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1180199965&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/e64431be3cd49ec0fa007e4513d1a383956c0ca23c29f-6mhTVb'], 'images': [{'url': 'http://img.hb.aicdn.com/e64431be3cd49ec0fa007e4513d1a383956c0ca23c29f-6mhTVb', 'path': 'full/8ff79d34a07d462202c3bb6b5aea22be2db32390.jpg', 'checksum': 'ff2738123e0d1e4f11bdb01baffeb5d2'}]}
+2017-06-14 16:28:33 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://img.hb.aicdn.com/aa3f0c81a412af009d604d82671d855e260588fd1223b0-HodjYQ> (failed 1 times): User timeout caused connection failure: Getting http://img.hb.aicdn.com/aa3f0c81a412af009d604d82671d855e260588fd1223b0-HodjYQ took longer than 180.0 seconds..
+2017-06-14 16:28:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/40e59dd92d337885eb53fd3ff3c217a634863db53da179-c8wGFL> (referer: None)
+2017-06-14 16:28:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/40e59dd92d337885eb53fd3ff3c217a634863db53da179-c8wGFL> referred in <None>
+2017-06-14 16:28:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1180199965&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/40e59dd92d337885eb53fd3ff3c217a634863db53da179-c8wGFL'], 'images': [{'url': 'http://img.hb.aicdn.com/40e59dd92d337885eb53fd3ff3c217a634863db53da179-c8wGFL', 'path': 'full/0afc8b24bf3e1703c3a80f8deb0b0be04aba3c93.jpg', 'checksum': '8d28c95005a2dda4e28ce7be6849576d'}]}
+2017-06-14 16:28:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/b7896dd392b5546c2956fc63c1e9c3f28a3d58b8b54ff-S8FFjS> (referer: None)
+2017-06-14 16:28:38 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/b7896dd392b5546c2956fc63c1e9c3f28a3d58b8b54ff-S8FFjS> referred in <None>
+2017-06-14 16:28:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1180199965&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/b7896dd392b5546c2956fc63c1e9c3f28a3d58b8b54ff-S8FFjS'], 'images': [{'url': 'http://img.hb.aicdn.com/b7896dd392b5546c2956fc63c1e9c3f28a3d58b8b54ff-S8FFjS', 'path': 'full/5a417d0f756fc71eba16e2d861da13d8deef6ddf.jpg', 'checksum': '18ac17b8d0277723e391b299ee1a98c4'}]}
+2017-06-14 16:28:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/c3e112a0af1631d59ba01f61e9f77f2f54da5c20fc2a5-9rsrnZ> (referer: None)
+2017-06-14 16:28:43 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/c3e112a0af1631d59ba01f61e9f77f2f54da5c20fc2a5-9rsrnZ> referred in <None>
+2017-06-14 16:28:43 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1180199965&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/c3e112a0af1631d59ba01f61e9f77f2f54da5c20fc2a5-9rsrnZ'], 'images': [{'url': 'http://img.hb.aicdn.com/c3e112a0af1631d59ba01f61e9f77f2f54da5c20fc2a5-9rsrnZ', 'path': 'full/1ce661eee946801ca93089c64f269bfe17be0600.jpg', 'checksum': '8fb5dd8e37beec2b9fa83cd09f9d58c8'}]}
+2017-06-14 16:28:47 [scrapy.extensions.logstats] INFO: Crawled 183 pages (at 14 pages/min), scraped 172 items (at 14 items/min)
+2017-06-14 16:28:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/aa3f0c81a412af009d604d82671d855e260588fd1223b0-HodjYQ> (referer: None)
+2017-06-14 16:28:48 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/aa3f0c81a412af009d604d82671d855e260588fd1223b0-HodjYQ> referred in <None>
+2017-06-14 16:28:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1178430160&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/aa3f0c81a412af009d604d82671d855e260588fd1223b0-HodjYQ'], 'images': [{'url': 'http://img.hb.aicdn.com/aa3f0c81a412af009d604d82671d855e260588fd1223b0-HodjYQ', 'path': 'full/b1a893be7426e693e97e2a71bde98283b3523523.jpg', 'checksum': '5be9b64d8b20f641a15283b0e93bee98'}]}
+2017-06-14 16:28:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://huaban.com/favorite/beauty/?j3vgljf1&max=1170020373&limit=20&wfl=1> (referer: http://huaban.com/favorite/beauty/?j3vgljf1&max=1172884199&limit=20&wfl=1)
+2017-06-14 16:28:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/99a9fe5ba880d0325aebaaea588acc0c8f25092a6e32a-63EeMo> (referer: None)
+2017-06-14 16:28:57 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/99a9fe5ba880d0325aebaaea588acc0c8f25092a6e32a-63EeMo> referred in <None>
+2017-06-14 16:28:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/fb064ff0d16ff583dfc0d673982657dfae6a4da82211b-h24lPk> (referer: None)
+2017-06-14 16:28:57 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/fb064ff0d16ff583dfc0d673982657dfae6a4da82211b-h24lPk> referred in <None>
+2017-06-14 16:28:57 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1170020373&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/99a9fe5ba880d0325aebaaea588acc0c8f25092a6e32a-63EeMo'], 'images': [{'url': 'http://img.hb.aicdn.com/99a9fe5ba880d0325aebaaea588acc0c8f25092a6e32a-63EeMo', 'path': 'full/6183d6407d2296081e7c0bc69346dfcaddc5666c.jpg', 'checksum': 'bddae210e80f7c2dda8219e4e134218c'}]}
+2017-06-14 16:28:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/a9feeec161481739e652e5055f8dbf9f05a1f3d23f8cd-K4gGIv> (referer: None)
+2017-06-14 16:28:57 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/a9feeec161481739e652e5055f8dbf9f05a1f3d23f8cd-K4gGIv> referred in <None>
+2017-06-14 16:28:57 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1170020373&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/fb064ff0d16ff583dfc0d673982657dfae6a4da82211b-h24lPk'], 'images': [{'url': 'http://img.hb.aicdn.com/fb064ff0d16ff583dfc0d673982657dfae6a4da82211b-h24lPk', 'path': 'full/715f79a66081ac478ffa9e650ca60e851786e703.jpg', 'checksum': '27448c2bcf21a9e35d5a4f2de4146761'}]}
+2017-06-14 16:28:57 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1170020373&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/a9feeec161481739e652e5055f8dbf9f05a1f3d23f8cd-K4gGIv'], 'images': [{'url': 'http://img.hb.aicdn.com/a9feeec161481739e652e5055f8dbf9f05a1f3d23f8cd-K4gGIv', 'path': 'full/b93029b7b10d948aecd9c9a8cb58f79692ab07ae.jpg', 'checksum': '5e2a1ce9c8f6e629561204422195a8db'}]}
+2017-06-14 16:29:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/d8e0906065600640e3a1d805c67474774a06e9952ff366-jZzmZF> (referer: None)
+2017-06-14 16:29:07 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/d8e0906065600640e3a1d805c67474774a06e9952ff366-jZzmZF> referred in <None>
+2017-06-14 16:29:08 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1172884199&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/d8e0906065600640e3a1d805c67474774a06e9952ff366-jZzmZF'], 'images': [{'url': 'http://img.hb.aicdn.com/d8e0906065600640e3a1d805c67474774a06e9952ff366-jZzmZF', 'path': 'full/d273cfef964edc77e4746e2484f1b637a6ddb38f.jpg', 'checksum': '2b9a6e454e80e131b131d4824b3f6c48'}]}
+2017-06-14 16:29:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/32a4e63855614ac0f63826d895fe2866f993d86c1e0a8a-gtKfX6> (referer: None)
+2017-06-14 16:29:09 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/32a4e63855614ac0f63826d895fe2866f993d86c1e0a8a-gtKfX6> referred in <None>
+2017-06-14 16:29:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1170020373&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/32a4e63855614ac0f63826d895fe2866f993d86c1e0a8a-gtKfX6'], 'images': [{'url': 'http://img.hb.aicdn.com/32a4e63855614ac0f63826d895fe2866f993d86c1e0a8a-gtKfX6', 'path': 'full/b1700667adb40a3b9ddce49e1459b79f645b6da3.jpg', 'checksum': 'ddd0405f8d8cb3004866428c18762669'}]}
+2017-06-14 16:29:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/be39a53f9b0dfd9e8dc57400ca471ad01b791da7a56ed-gyyR03> (referer: None)
+2017-06-14 16:29:12 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/be39a53f9b0dfd9e8dc57400ca471ad01b791da7a56ed-gyyR03> referred in <None>
+2017-06-14 16:29:13 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1170020373&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/be39a53f9b0dfd9e8dc57400ca471ad01b791da7a56ed-gyyR03'], 'images': [{'url': 'http://img.hb.aicdn.com/be39a53f9b0dfd9e8dc57400ca471ad01b791da7a56ed-gyyR03', 'path': 'full/8a55b1f1edc66a7afd697da1df686d1146ddb538.jpg', 'checksum': '37387d89e3c692ce0a7a54c60b8016ba'}]}
+2017-06-14 16:29:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/9584dc0c7930f58fd4f2a4083977aa2338ae20828a6a5-l8UkL9> (referer: None)
+2017-06-14 16:29:15 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/9584dc0c7930f58fd4f2a4083977aa2338ae20828a6a5-l8UkL9> referred in <None>
+2017-06-14 16:29:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1170020373&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/9584dc0c7930f58fd4f2a4083977aa2338ae20828a6a5-l8UkL9'], 'images': [{'url': 'http://img.hb.aicdn.com/9584dc0c7930f58fd4f2a4083977aa2338ae20828a6a5-l8UkL9', 'path': 'full/45237976b4d574c6353158b11f2b61b00e4db91f.jpg', 'checksum': '4f57f08f10557e71e817e88a003c09ec'}]}
+2017-06-14 16:29:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/e803ab94b87bcbe25a5bff96f434bee4e9a3076918696-rtmOWx> (referer: None)
+2017-06-14 16:29:19 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/e803ab94b87bcbe25a5bff96f434bee4e9a3076918696-rtmOWx> referred in <None>
+2017-06-14 16:29:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1170020373&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/e803ab94b87bcbe25a5bff96f434bee4e9a3076918696-rtmOWx'], 'images': [{'url': 'http://img.hb.aicdn.com/e803ab94b87bcbe25a5bff96f434bee4e9a3076918696-rtmOWx', 'path': 'full/60b5d2005dd876386dc63001ccdfe5605b982de9.jpg', 'checksum': '27e43e09587fbf8aef2482b0164cf518'}]}
+2017-06-14 16:29:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/c056ae33fc725f2e35ce34e23504823028959bbf2c121b-url07H> (referer: None)
+2017-06-14 16:29:32 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/c056ae33fc725f2e35ce34e23504823028959bbf2c121b-url07H> referred in <None>
+2017-06-14 16:29:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1170020373&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/c056ae33fc725f2e35ce34e23504823028959bbf2c121b-url07H'], 'images': [{'url': 'http://img.hb.aicdn.com/c056ae33fc725f2e35ce34e23504823028959bbf2c121b-url07H', 'path': 'full/3cf1202d0528a967a68e655a4b2f8a9c761e723a.jpg', 'checksum': '186d9e95b6dfbb770e232cb05effa63c'}]}
+2017-06-14 16:29:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/d23eae4c85b90b9fa3b4055cec24b2254afd2caabcf77-jfAcKJ> (referer: None)
+2017-06-14 16:29:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/d23eae4c85b90b9fa3b4055cec24b2254afd2caabcf77-jfAcKJ> referred in <None>
+2017-06-14 16:29:34 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2017-06-14 16:29:34 [PIL.PngImagePlugin] DEBUG: STREAM b'bKGD' 41 6
+2017-06-14 16:29:34 [PIL.PngImagePlugin] DEBUG: b'bKGD' 41 6 (unknown)
+2017-06-14 16:29:34 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 59 32768
+2017-06-14 16:29:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/57967a89c45b1bb46fd955ea474a8283e452820ab20fc-w693Ap> (referer: None)
+2017-06-14 16:29:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/57967a89c45b1bb46fd955ea474a8283e452820ab20fc-w693Ap> referred in <None>
+2017-06-14 16:29:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/2a97237bd2212ca083d4296a62a73e3d5be0593ff519-d8KYRg> (referer: None)
+2017-06-14 16:29:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/2a97237bd2212ca083d4296a62a73e3d5be0593ff519-d8KYRg> referred in <None>
+2017-06-14 16:29:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1170020373&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/d23eae4c85b90b9fa3b4055cec24b2254afd2caabcf77-jfAcKJ'], 'images': [{'url': 'http://img.hb.aicdn.com/d23eae4c85b90b9fa3b4055cec24b2254afd2caabcf77-jfAcKJ', 'path': 'full/9d7f651b307dcbfa82a709486271a5d9e1b7656f.jpg', 'checksum': 'b3d8058b63c1f123b4941e9e4994de0e'}]}
+2017-06-14 16:29:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1170020373&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/57967a89c45b1bb46fd955ea474a8283e452820ab20fc-w693Ap'], 'images': [{'url': 'http://img.hb.aicdn.com/57967a89c45b1bb46fd955ea474a8283e452820ab20fc-w693Ap', 'path': 'full/100235c5b1b579c091fb6e183464ca1f3cedc7a1.jpg', 'checksum': 'f9a3e73bd7114906f7f7f589bba84244'}]}
+2017-06-14 16:29:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1170020373&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/2a97237bd2212ca083d4296a62a73e3d5be0593ff519-d8KYRg'], 'images': [{'url': 'http://img.hb.aicdn.com/2a97237bd2212ca083d4296a62a73e3d5be0593ff519-d8KYRg', 'path': 'full/d34421a2e7785e6213a8973b865f02c3b29357fd.jpg', 'checksum': 'b7117098c611bbdb31df4c4ff1e09278'}]}
+2017-06-14 16:29:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://huaban.com/favorite/beauty/?j3vgljf1&max=1167892497&limit=20&wfl=1> (referer: http://huaban.com/favorite/beauty/?j3vgljf1&max=1170020373&limit=20&wfl=1)
+2017-06-14 16:29:39 [scrapy.core.scraper] ERROR: Spider error processing <GET http://huaban.com/favorite/beauty/?j3vgljf1&max=1167892497&limit=20&wfl=1> (referer: http://huaban.com/favorite/beauty/?j3vgljf1&max=1170020373&limit=20&wfl=1)
+Traceback (most recent call last):
+  File "F:\program\Anaconda\envs\scrapy\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "F:\program\Anaconda\envs\scrapy\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "F:\program\Anaconda\envs\scrapy\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "F:\program\Anaconda\envs\scrapy\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\program\Anaconda\envs\scrapy\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\PyWorkSpace\ScrapySpace\HuanbanSpider\HuanbanSpider\spiders\hbspider.py", line 21, in parse
+    s = json.loads(re.search('app.page\["pins"\] = (.*?);', response.body_as_unicode(), re.S).group(1))
+  File "F:\program\Anaconda\envs\scrapy\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "F:\program\Anaconda\envs\scrapy\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "F:\program\Anaconda\envs\scrapy\lib\json\decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 22914 (char 22913)
+2017-06-14 16:29:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/e22eaac57de788429fc498b4924aeee4bedd6ad68af21-Bg7ZMM> (referer: None)
+2017-06-14 16:29:39 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/e22eaac57de788429fc498b4924aeee4bedd6ad68af21-Bg7ZMM> referred in <None>
+2017-06-14 16:29:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/11a657eac39563c4fbbdeba6388f251b34a4c054e762-eEcdjN> (referer: None)
+2017-06-14 16:29:39 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/11a657eac39563c4fbbdeba6388f251b34a4c054e762-eEcdjN> referred in <None>
+2017-06-14 16:29:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1170020373&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/e22eaac57de788429fc498b4924aeee4bedd6ad68af21-Bg7ZMM'], 'images': [{'url': 'http://img.hb.aicdn.com/e22eaac57de788429fc498b4924aeee4bedd6ad68af21-Bg7ZMM', 'path': 'full/45ee98d214a26df2cfdc2a2ef8e96ccbc1558899.jpg', 'checksum': 'dc7d3e917868748581c235955fbe2285'}]}
+2017-06-14 16:29:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/e38a881db3a1f880eedc047915ef302366a74674dea3-KdanuI> (referer: None)
+2017-06-14 16:29:39 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/e38a881db3a1f880eedc047915ef302366a74674dea3-KdanuI> referred in <None>
+2017-06-14 16:29:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/7fdd112239e56d57dd37a8c2dcf77d9a958fd1c074cb-7kx9dR> (referer: None)
+2017-06-14 16:29:39 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/7fdd112239e56d57dd37a8c2dcf77d9a958fd1c074cb-7kx9dR> referred in <None>
+2017-06-14 16:29:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1170020373&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/11a657eac39563c4fbbdeba6388f251b34a4c054e762-eEcdjN'], 'images': [{'url': 'http://img.hb.aicdn.com/11a657eac39563c4fbbdeba6388f251b34a4c054e762-eEcdjN', 'path': 'full/cc07e644161a5d2cae349fcb2407627d3b0291a2.jpg', 'checksum': '6900a768c782da12f2c7a468c22627a2'}]}
+2017-06-14 16:29:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1170020373&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/e38a881db3a1f880eedc047915ef302366a74674dea3-KdanuI'], 'images': [{'url': 'http://img.hb.aicdn.com/e38a881db3a1f880eedc047915ef302366a74674dea3-KdanuI', 'path': 'full/07020e4620292bba6368af72c7cb15bdbdb87495.jpg', 'checksum': 'cf13926fe704d164792dcdf55ad03c96'}]}
+2017-06-14 16:29:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/0d1f119a976705d8be042c89aee0c2bb42af27eadaa6-5wLAzU> (referer: None)
+2017-06-14 16:29:40 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/0d1f119a976705d8be042c89aee0c2bb42af27eadaa6-5wLAzU> referred in <None>
+2017-06-14 16:29:40 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1170020373&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/7fdd112239e56d57dd37a8c2dcf77d9a958fd1c074cb-7kx9dR'], 'images': [{'url': 'http://img.hb.aicdn.com/7fdd112239e56d57dd37a8c2dcf77d9a958fd1c074cb-7kx9dR', 'path': 'full/2f92e2937d09463116da8df6f45b0eee6b09e0ba.jpg', 'checksum': '6dce43fd2493e55dd3a4d2f094903525'}]}
+2017-06-14 16:29:40 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1170020373&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/0d1f119a976705d8be042c89aee0c2bb42af27eadaa6-5wLAzU'], 'images': [{'url': 'http://img.hb.aicdn.com/0d1f119a976705d8be042c89aee0c2bb42af27eadaa6-5wLAzU', 'path': 'full/f0705d60b990457a8d200c18df942961256f09f3.jpg', 'checksum': '4aaae191ecc1fbdcf53fb65b77c925d2'}]}
+2017-06-14 16:29:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/b08532155f992e6f07b41f822bb7424beabba022201ac-kNO9sy> (referer: None)
+2017-06-14 16:29:40 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/b08532155f992e6f07b41f822bb7424beabba022201ac-kNO9sy> referred in <None>
+2017-06-14 16:29:40 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1170020373&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/b08532155f992e6f07b41f822bb7424beabba022201ac-kNO9sy'], 'images': [{'url': 'http://img.hb.aicdn.com/b08532155f992e6f07b41f822bb7424beabba022201ac-kNO9sy', 'path': 'full/87cc6949946b1852c5fa912d11bf466f12b3afd0.jpg', 'checksum': '812a15fc8f92049ecf8da6f949c55b3b'}]}
+2017-06-14 16:29:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/900ee2b52989b713d4fdc2aa8fe3a5331b455dcd18ecd-asotok> (referer: None)
+2017-06-14 16:29:41 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/900ee2b52989b713d4fdc2aa8fe3a5331b455dcd18ecd-asotok> referred in <None>
+2017-06-14 16:29:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1170020373&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/900ee2b52989b713d4fdc2aa8fe3a5331b455dcd18ecd-asotok'], 'images': [{'url': 'http://img.hb.aicdn.com/900ee2b52989b713d4fdc2aa8fe3a5331b455dcd18ecd-asotok', 'path': 'full/17d4707a925674dde22760b33b59125e79b80dd4.jpg', 'checksum': '7b5e245c35941d3607e0d2730942df09'}]}
+2017-06-14 16:29:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/99b28d93e8b42288772062769e73bd194ec6c8d2666f5-ETDbuV> (referer: None)
+2017-06-14 16:29:42 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/99b28d93e8b42288772062769e73bd194ec6c8d2666f5-ETDbuV> referred in <None>
+2017-06-14 16:29:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/92959f2a317fbefaab595da3f4a54bd8e439fbe53203a-fI38n1> (referer: None)
+2017-06-14 16:29:43 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/92959f2a317fbefaab595da3f4a54bd8e439fbe53203a-fI38n1> referred in <None>
+2017-06-14 16:29:43 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1170020373&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/99b28d93e8b42288772062769e73bd194ec6c8d2666f5-ETDbuV'], 'images': [{'url': 'http://img.hb.aicdn.com/99b28d93e8b42288772062769e73bd194ec6c8d2666f5-ETDbuV', 'path': 'full/605e8d07558129e8337c62792dc95b96ba8552d9.jpg', 'checksum': '90133d5f1dd131bcf0fdcff329e61a01'}]}
+2017-06-14 16:29:43 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1170020373&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/92959f2a317fbefaab595da3f4a54bd8e439fbe53203a-fI38n1'], 'images': [{'url': 'http://img.hb.aicdn.com/92959f2a317fbefaab595da3f4a54bd8e439fbe53203a-fI38n1', 'path': 'full/897ef3b57f5aaa69d98bc749ae6150f984cb7428.jpg', 'checksum': '47c4ff8474b554729e00ef0e50248fb5'}]}
+2017-06-14 16:29:47 [scrapy.extensions.logstats] INFO: Crawled 207 pages (at 24 pages/min), scraped 194 items (at 22 items/min)
+2017-06-14 16:30:36 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://img.hb.aicdn.com/7feb50d5cb02a5f75b9a2b19d20439fa8ba064b04102d-8CvXEL> (failed 1 times): User timeout caused connection failure: Getting http://img.hb.aicdn.com/7feb50d5cb02a5f75b9a2b19d20439fa8ba064b04102d-8CvXEL took longer than 180.0 seconds..
+2017-06-14 16:30:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/7feb50d5cb02a5f75b9a2b19d20439fa8ba064b04102d-8CvXEL> (referer: None)
+2017-06-14 16:30:36 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/7feb50d5cb02a5f75b9a2b19d20439fa8ba064b04102d-8CvXEL> referred in <None>
+2017-06-14 16:30:37 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://img.hb.aicdn.com/359bc83ede6faff7473c274f0cd37f543b7b54fe268b6-5SiPcG> (failed 1 times): User timeout caused connection failure: Getting http://img.hb.aicdn.com/359bc83ede6faff7473c274f0cd37f543b7b54fe268b6-5SiPcG took longer than 180.0 seconds..
+2017-06-14 16:30:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1172884199&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/7feb50d5cb02a5f75b9a2b19d20439fa8ba064b04102d-8CvXEL'], 'images': [{'url': 'http://img.hb.aicdn.com/7feb50d5cb02a5f75b9a2b19d20439fa8ba064b04102d-8CvXEL', 'path': 'full/cccc90eebe6dc02f75a821b484e5c285194d1c0e.jpg', 'checksum': 'e0e6e770203206ff9ba07efb0cd87735'}]}
+2017-06-14 16:30:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/359bc83ede6faff7473c274f0cd37f543b7b54fe268b6-5SiPcG> (referer: None)
+2017-06-14 16:30:37 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/359bc83ede6faff7473c274f0cd37f543b7b54fe268b6-5SiPcG> referred in <None>
+2017-06-14 16:30:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1172884199&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/359bc83ede6faff7473c274f0cd37f543b7b54fe268b6-5SiPcG'], 'images': [{'url': 'http://img.hb.aicdn.com/359bc83ede6faff7473c274f0cd37f543b7b54fe268b6-5SiPcG', 'path': 'full/6c851fabb5adf29832656249ade11b4b6c6ad4c6.jpg', 'checksum': 'efc9bf999972370235bacf27de6568cb'}]}
+2017-06-14 16:30:43 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://img.hb.aicdn.com/0eda370da67b8c640383c5c67f21908deb24b5002f46a4-pUsMvg> (failed 1 times): User timeout caused connection failure: Getting http://img.hb.aicdn.com/0eda370da67b8c640383c5c67f21908deb24b5002f46a4-pUsMvg took longer than 180.0 seconds..
+2017-06-14 16:30:46 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://img.hb.aicdn.com/67fadd4ac45b7197c50e27b89f842c965b99be5c86b2d-wS3P6D> (failed 1 times): User timeout caused connection failure: Getting http://img.hb.aicdn.com/67fadd4ac45b7197c50e27b89f842c965b99be5c86b2d-wS3P6D took longer than 180.0 seconds..
+2017-06-14 16:30:47 [scrapy.extensions.logstats] INFO: Crawled 209 pages (at 2 pages/min), scraped 196 items (at 2 items/min)
+2017-06-14 16:30:52 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://img.hb.aicdn.com/901fff0b07b7c28f6076d788bca5a7871f5521ca6cda8-lUMBNj> (failed 1 times): User timeout caused connection failure: Getting http://img.hb.aicdn.com/901fff0b07b7c28f6076d788bca5a7871f5521ca6cda8-lUMBNj took longer than 180.0 seconds..
+2017-06-14 16:30:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/67fadd4ac45b7197c50e27b89f842c965b99be5c86b2d-wS3P6D> (referer: None)
+2017-06-14 16:30:54 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/67fadd4ac45b7197c50e27b89f842c965b99be5c86b2d-wS3P6D> referred in <None>
+2017-06-14 16:30:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1172884199&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/67fadd4ac45b7197c50e27b89f842c965b99be5c86b2d-wS3P6D'], 'images': [{'url': 'http://img.hb.aicdn.com/67fadd4ac45b7197c50e27b89f842c965b99be5c86b2d-wS3P6D', 'path': 'full/1aeceb434832d2fe1ef916c5bb92cd146ff19425.jpg', 'checksum': '6ff881a37b969090216f9aedd50a9f61'}]}
+2017-06-14 16:31:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/0eda370da67b8c640383c5c67f21908deb24b5002f46a4-pUsMvg> (referer: None)
+2017-06-14 16:31:00 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/0eda370da67b8c640383c5c67f21908deb24b5002f46a4-pUsMvg> referred in <None>
+2017-06-14 16:31:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1172884199&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/0eda370da67b8c640383c5c67f21908deb24b5002f46a4-pUsMvg'], 'images': [{'url': 'http://img.hb.aicdn.com/0eda370da67b8c640383c5c67f21908deb24b5002f46a4-pUsMvg', 'path': 'full/7812e94e7c6528c70c6501c7659acb8ff4dfa020.jpg', 'checksum': '4784cb117fb1635a22f0826d0a103a0a'}]}
+2017-06-14 16:31:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/901fff0b07b7c28f6076d788bca5a7871f5521ca6cda8-lUMBNj> (referer: None)
+2017-06-14 16:31:09 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/901fff0b07b7c28f6076d788bca5a7871f5521ca6cda8-lUMBNj> referred in <None>
+2017-06-14 16:31:09 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1172884199&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/901fff0b07b7c28f6076d788bca5a7871f5521ca6cda8-lUMBNj'], 'images': [{'url': 'http://img.hb.aicdn.com/901fff0b07b7c28f6076d788bca5a7871f5521ca6cda8-lUMBNj', 'path': 'full/e31f870f367088753cae4d16108c2b7be7d8b7e9.jpg', 'checksum': 'dfb71355527811beb55af2ee4a0d505f'}]}
+2017-06-14 16:31:33 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://img.hb.aicdn.com/1b28785a1f134f7b8cfe971ba2bd0dd56145432be1e27-vBAKPS> (failed 2 times): User timeout caused connection failure: Getting http://img.hb.aicdn.com/1b28785a1f134f7b8cfe971ba2bd0dd56145432be1e27-vBAKPS took longer than 180.0 seconds..
+2017-06-14 16:31:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://img.hb.aicdn.com/1b28785a1f134f7b8cfe971ba2bd0dd56145432be1e27-vBAKPS> (referer: None)
+2017-06-14 16:31:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET http://img.hb.aicdn.com/1b28785a1f134f7b8cfe971ba2bd0dd56145432be1e27-vBAKPS> referred in <None>
+2017-06-14 16:31:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://huaban.com/favorite/beauty/?j3vgljf1&max=1180199965&limit=20&wfl=1>
+{'image_urls': ['http://img.hb.aicdn.com/1b28785a1f134f7b8cfe971ba2bd0dd56145432be1e27-vBAKPS'], 'images': [{'url': 'http://img.hb.aicdn.com/1b28785a1f134f7b8cfe971ba2bd0dd56145432be1e27-vBAKPS', 'path': 'full/80663505762fcbb8142e826922a2b9804e71a38a.jpg', 'checksum': 'efc25c54264e24a88b07c7662371981a'}]}
+2017-06-14 16:31:33 [scrapy.core.engine] INFO: Closing spider (finished)
+2017-06-14 16:31:33 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 18,
+ 'downloader/exception_type_count/twisted.internet.error.TimeoutError': 18,
+ 'downloader/request_bytes': 98523,
+ 'downloader/request_count': 231,
+ 'downloader/request_method_count/GET': 231,
+ 'downloader/response_bytes': 97557787,
+ 'downloader/response_count': 213,
+ 'downloader/response_status_count/200': 212,
+ 'downloader/response_status_count/404': 1,
+ 'file_count': 200,
+ 'file_status_count/downloaded': 200,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 6, 14, 8, 31, 33, 928505),
+ 'item_scraped_count': 200,
+ 'log_count/DEBUG': 654,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 19,
+ 'request_depth_max': 10,
+ 'response_received_count': 213,
+ 'scheduler/dequeued': 12,
+ 'scheduler/dequeued/memory': 12,
+ 'scheduler/enqueued': 12,
+ 'scheduler/enqueued/memory': 12,
+ 'spider_exceptions/JSONDecodeError': 1,
+ 'start_time': datetime.datetime(2017, 6, 14, 8, 18, 47, 52597)}
+2017-06-14 16:31:33 [scrapy.core.engine] INFO: Spider closed (finished)
